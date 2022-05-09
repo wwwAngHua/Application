@@ -96,7 +96,7 @@ public class MainActivity extends Activity
             //Dialog弹窗
             AlertDialog.Builder build = new AlertDialog.Builder(this);
             build.setTitle("欢迎");
-            build.setMessage("欢迎来到Application！\n\nApplication是一个集成开发环境（IDE），直接在Android设备上开发真正的Android应用程序，让你在没有电脑的情况下，一步一步成为一个专家应用程序开发人员。\n\nApplication支持Soft&XML和Android SDK开发应用程序，用Java&XML和Android SDK开发应用程序，不仅如此，Application还支持Soft与Java进行混编交互。\n\nApplication设计的目的是构建一个Soft语言的开发环境，让人人都能开发应用程序，Soft语言简化了Java繁琐的代码并保留了Java原有的特点，让小白也能够快速上手开发应用程序。\n\nApplication使用的主要编程语言是Soft语言，如需了解学习Soft语言请阅读Soft快速开发手册。\n\nApplication当前软件版本为1.0版本，功能尚未完善，如果您在使用过程中遇到什么问题或者有什么好的建议欢迎反馈给我们，让我们更好的完善Application，同时欢迎各位有兴趣有志向的小伙伴一起交流一同发展。\n\n开发者：呆瓜Dusk\n联系QQ：422584084\n联系邮箱：duskmail@qq.com\nApplication官方QQ交流群：737444923");
+            build.setMessage("欢迎来到Application！\n\nApplication是一个集成开发环境（IDE），直接在Android设备上开发真正的Android应用程序，让你在没有电脑的情况下，一步一步成为一个专家应用程序开发人员。\n\nApplication支持Soft&XML和Android SDK开发应用程序，用Java&XML和Android SDK开发应用程序，不仅如此，Application还支持Soft与Java进行混编交互。\n\nApplication设计的目的是构建一个Soft语言的开发环境，让人人都能开发应用程序，Soft语言简化了Java繁琐的代码并保留了Java原有的特点，让小白也能够快速上手开发应用程序。\n\nApplication使用的主要编程语言是Soft语言，如需了解学习Soft语言请阅读Soft快速开发手册。\n\nApplication当前软件版本为1.0版本，功能尚未完善，如果您在使用过程中遇到什么问题或者有什么好的建议欢迎反馈给我们，让我们更好的完善Application，同时欢迎各位有兴趣有志向的小伙伴一起交流一同发展。\n\n开发者：王华\n联系QQ：422584084\n联系邮箱：duskmail@qq.com\nApplication官方QQ交流群：737444923");
             build.setCancelable(false);
             build.setPositiveButton("确定", new DialogInterface.OnClickListener()
             {
