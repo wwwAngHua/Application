@@ -1,6 +1,6 @@
 # Application
 
-Application是我在2年前使用Java开发的一款开发安卓应用程序的App。至于为什么叫Application，是因为我想了好几天也没想出一个合适的名字，哈哈哈，所以就叫Application了，Application意为应用程序的意思。
+Application是一个集成开发环境（IDE），直接在Android设备上开发真正的Android应用程序，Application是我在2年前使用Java开发的一款开发安卓应用程序的App。至于为什么叫Application，是因为我想了好几天也没想出一个合适的名字，哈哈哈，所以就叫Application了，Application意为应用程序的意思。
 
 Application中所使用的Soft语言其实本质是也是Java，只是对Java的代码进行了封装。开源这个应用程序的原因，主要因为我个人之前一直没有时间开发新版本，所以这个软件只开发了当前这一个版本；其次也是因为我有了更新的想法，在未来将开发一个全新的Application，使用H5（Vue3、Vant，JavaScript等）的开发方式来开发安卓软件，同时后期面向全平台，就像微信小程序、Uni-App一样，一套代码打包多端平台的应用程序（欢迎大家加群交流）；再接下来的原因当然就是开源精神了，因为圈子里很多朋友想让我开源，有很多的朋友想要研究如何编译安卓应用程序，所以借此，也就给大家开源了，希望对大家有所帮助！
 
@@ -235,4 +235,15 @@ public static boolean zipSigner(String key,String ap_,String apk)
     return true;
 }
 ```
+**三、软件截图**
+
+![image](https://user-images.githubusercontent.com/86884357/167344439-074da40b-fe98-4061-816a-26d267d86e3f.png)
+![image](https://user-images.githubusercontent.com/86884357/167344459-02f74b8a-8a42-4d6d-a1f5-2256012472c5.png)
+![image](https://user-images.githubusercontent.com/86884357/167344490-7052f6ed-bddc-45b6-897e-af18173686dc.png)
+![image](https://user-images.githubusercontent.com/86884357/167344504-dec65c1a-8b0e-4fb8-845e-53db671857c1.png)
+![image](https://user-images.githubusercontent.com/86884357/167344519-795a2539-f68b-4cd2-85cb-db16ab48274d.png)
+
+
+
+
 
