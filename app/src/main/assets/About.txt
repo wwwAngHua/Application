@@ -11,7 +11,7 @@ Application使用的主要编程语言是Soft语言，如需了解学习Soft语�
 
 Application当前软件版本为1.0版本，功能尚未完善，如果您在使用过程中遇到什么问题或者有什么好的建议欢迎反馈给我们，让我们更好的完善Application，同时欢迎各位有兴趣有志向的小伙伴一起交流一同发展。
 
-开发者：呆瓜Dusk
+开发者：王华
 联系QQ：422584084
 联系邮箱：duskmail@qq.com
 Application官方QQ交流群：737444923
