@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/dormids"
+        android:title="重命名"/>
+    
+    <item
+        android:id="@+id/detect"
+        android:title="删除"/>
+    
+    <item
+        android:id="@+id/copypath"
+        android:title="复制路径"/>
+    
+</menu>

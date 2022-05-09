@@ -1,0 +1,157 @@
+《Soft》速成开发手册
+修改日期：2020年7月13日
+
+《Soft》是一门解释型语言，丰富的类库定制简单快速开发你的应用程序，让开发过程变得娱乐化大众化。
+《Soft》是由呆瓜Dusk个人参与完成开发，其设计的目的就是简化繁琐的Java代码并保留Java原有的特点，让小白也能够轻轻松松进行应用程序的开发。
+《Soft》除了预设代码外还支持与Java混编交互，所有代码都由根对象延伸，简入深出的系统性学习，支持导入Android所有的SDK，所有代码都编译成Java代码，再编译成dex文件。
+《Soft》是开发应用程序的语言，全面向公众开放平台，任何有兴趣的人都可以参与开发设计自己的程序。
+
+【指定系统编译】
+方案一：
+在Soft中可以指定系统来编译代码
+执行Java代码：
+String str = "Hello World";
+Toast.makeText(this,str,Toast.LENGTH_SHORT).show();
+或者与Soft进行混编交互：
+String str = "Hello World";
+Soft.Toast(this,str,0);
+方案二：
+Soft允许java格式文件，进行混编交互。
+创建*.java文件，并且完全支持Android原生开发。
+
+【注释】
+用法：
+// 这是单行注释
+/*
+这是多行注释
+*/
+说明：
+用于注释代码或说明，被注释的内容，将不会被编译器识别编译。
+
+【变量】
+用法：
+String a;
+a = "Hello World";
+String a = "Hello World";
+Soft.Toast(this,a,0);
+说明：
+用于申明程序窗口中的变量，Soft变量需要申明数据类型。
+
+【基本语法】
+大小写敏感：Soft是大小写敏感的，这就意味着标识符Hello与hello是不同的。
+Soft文件名：对于所有的Soft文件来说，文件名的首字母应该大写，如果文件名由若干单词组成，那么每个单词的首字母应该大写，例如MyFirstSoft。
+源文件名：切记Soft是大小写敏感的，文件名的后缀为.soft而不是.Soft。
+Soft空行：空白行或者有注释的行，Soft编译器都会忽略掉。
+
+【关键字】
+Soft保留的关键字有：
+soft、toast、soft.toast、deletefiles、soft.deletefiles、fileexists、soft.fileexists
+Java保留的关键字有：
+private、protected、public、default、abstract、class、extends、final、implements、interface、native、new、static、strictfp、synchronized、transient、volatile、break、case、continue、default、do、else、for、if、instanceof、return、switch、while、assert、catch、finally、throw、throws、try、import、package、boolean、byte、char、double、float、int、long、short、super、this、void、goto、const、null
+说明：
+因为Soft进行编译时会转换到Java源程序，所以Java保留的关键字也值得了解。
+
+【运算符】
+算术运算符：
++ 加法 - 相加运算符两侧的值
+- 减法 - 左操作数减去右操作数
+* 乘法 - 相乘操作符两侧的值
+/ 除法 - 左操作数除以右操作数
+% 取余 - 左操作数除以右操作数的余数
+++ 自增：操作数的值增加1
+-- 自减：操作数的值减少1
+关系运算符：
+== 检查如果两个操作数的值是否相等，如果相等则条件为真
+!= 检查如果两个操作数的值是否相等，如果值不相等则条件为真
+> 检查左操作数的值是否大于右操作数的值，如果是那么条件为真
+< 检查左操作数的值是否小于右操作数的值，如果是那么条件为真
+>= 检查左操作数的值是否大于或等于右操作数的值，如果是那么条件为真
+<= 检查左操作数的值是否小于或等于右操作数的值，如果是那么条件为真
+位运算符：
+& 如果相对应位都是1，则结果为1，否则为0
+| 如果相对应位都是 0，则结果为 0，否则为 1
+^ 如果相对应位值相同，则结果为0，否则为1
+~ 按位取反运算符翻转操作数的每一位，即0变成1，1变成0
+<< 按位左移运算符，左操作数按位左移右操作数指定的位数
+>> 按位右移运算符，左操作数按位右移右操作数指定的位数
+>>> 按位右移补零操作符，左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充
+逻辑运算符：
+&& 称为逻辑与运算符，当且仅当两个操作数都为真，条件才为真
+| | 称为逻辑或操作符，如果任何两个操作数任何一个为真，条件为真
+! 称为逻辑非运算符，用来反转操作数的逻辑状态，如果条件为true，则逻辑非运算符将得到false
+说明：Soft运算符与Java运算符一样
+
+【if 判断语句】
+用法：
+int a = 1;
+if(a == 1)
+{
+Soft.Toast(this,"等于1",0);
+}
+else
+{
+Soft.Toast(this,"等于其他",0);
+}
+说明：
+条件判断语句，用于两个值的比较，常用于判断值是否对等与数值的大小，返回true或false。
+
+【while 循环】
+用法：
+int a = 1;
+while(a <= 10)
+{
+Soft.Toast(this,"value of a："+a,0);
+a++;
+}
+说明：
+条件循环语句，比较值的变化，然后进行循环执行里面的代码。
+
+【do...while 循环】
+用法：
+int a = 1;
+do
+{
+Soft.Toast(this,"value of a："+a,0);
+a++;
+}
+while(a <= 10);
+说明：
+do...while循环是while循环的变体，在检查while条件是否为真之前，该循环首先会执行一次do里面的代码。
+
+【for 循环】
+用法：
+for(int a;a <= 10;a++)
+{
+Soft.Toast(this,"value of a："+a,0);
+}
+说明：
+用于循环执行循环体中的代码，直到条件为真时。
+
+【switch case语句】
+用法：
+char a = 'C';
+switch(a)
+{
+case 'A' :
+Soft.Toast(this,"优秀",0);
+break;
+case 'B' :
+Soft.Toast(this,"良好",0);
+break;
+case 'C' :
+Soft.Toast(this,"及格",0);
+break;
+default :
+Soft.Toast(this,"未知",0);
+}
+Soft.Toast(this,"你的等级是："+a,0);
+说明：
+用于值的比较，当某个case语句中的表达式与此值相同时就执行这个case语句，直到遇到break为止。
+
+【Soft.Toast 提示】
+用法：
+String a = "Hello World";
+Soft.Toast(this,a,0);
+Soft.Toast(this,"Hello\nWorld",0);
+说明：
+用于弹出代码中的文字提醒用户，this代表当前活动，0显示的时间短暂，1显示的时间较长。

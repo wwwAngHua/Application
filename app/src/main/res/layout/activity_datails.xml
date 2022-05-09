@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFFFF">
+
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFFFF">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFFFFFFF">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="70dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center">
+
+					<ImageView
+						android:src="@drawable/ic_launcher"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_margin="10dp"
+						android:id="@+id/datailsicon"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Name"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="#FF000000"
+						android:layout_marginRight="10dp"
+						android:maxLines="1"
+						android:id="@+id/datailsname"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Package"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_marginRight="10dp"
+						android:id="@+id/datailspackage"
+						android:singleLine="true"
+						android:ellipsize="marquee"
+						android:marqueeRepeatLimit="marquee_forever"
+						android:focusable="true"
+						android:focusableInTouchMode="true"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Path"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_marginRight="10dp"
+						android:id="@+id/datailspath"
+						android:singleLine="true"
+						android:ellipsize="marquee"
+						android:marqueeRepeatLimit="marquee_forever"
+						android:focusable="true"
+						android:focusableInTouchMode="true"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="#FFE8E8E8"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="注意：一个完整的项目应当具备以下内容"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_margin="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1.libs文件夹"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2.java文件夹"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="3.build文件夹"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="4.assets文件夹"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="5.AndroidManifest.xml文件"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="6.res/values/strings.xml文件"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="7.res/drawable/ic_launcher.png文件"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="若项目没有上述所需文件可能会导致项目异常以及项目无法正常载入或者无法正常编译等种种复杂情况，为确保项目的正常使用，请确保项目具备上述内容。"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_margin="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="编译"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:textColor="#FF03A9F5"
+				android:layout_marginBottom="10dp"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="left|center"
+				android:id="@+id/compileandpackage"
+				android:background="@drawable/ripple">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="编译打包"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FF000000"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="构建完整软件包"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="运行"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_margin="10dp"
+				android:textColor="#FF03A9F5"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="left|center"
+				android:id="@+id/installation"
+				android:background="@drawable/ripple">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="安装运行"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FF000000"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="安装该项目软件包"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="备份"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_margin="10dp"
+				android:textColor="#FF03A9F5"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="left|center"
+				android:id="@+id/backup"
+				android:background="@drawable/ripple">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="备份项目"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FF000000"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="压缩项目至内部储存"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="危险"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_margin="10dp"
+				android:textColor="#FFFF0000"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="left|center"
+				android:id="@+id/delete"
+				android:background="@drawable/ripple">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="删除项目"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FF000000"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="删除该项目所有文件"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

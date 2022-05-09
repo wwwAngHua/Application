@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="70dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center">
+
+			<ImageView
+				android:src="@drawable/ic_launcher"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_margin="10dp"
+				android:id="@+id/appicon"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="left|center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Name"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/appname"
+				android:textColor="#FF000000"
+				android:layout_marginRight="10dp"
+				android:maxLines="1"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Package"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/apppackage"
+				android:layout_marginRight="10dp"
+				android:maxLines="1"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Path"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/apppath"
+				android:layout_marginRight="10dp"
+				android:maxLines="1"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#FFE8E8E8"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,1093 @@
+stringfog key : UTF-8
+stringfog impl: com.github.megatronking.stringfog.xor.StringFogImpl
+
+[adrt.ADRTLogCatReader]
+LogCat -> GTshblkh
+logcat -v threadtime -> OTshTlkhdGtbGCE8NEhZMSAvQF0=
+
+[adrt.ADRTSender]
+com.adrt.CONNECT -> NjsrA1kxJjIDexoaCGh7AQ==
+package -> JTUlRlkyMQ==
+com.adrt.STOP -> NjsrA1kxJjIDawEbFg==
+package -> JTUlRlkyMQ==
+com.adrt.BREAKPOINT_HIT -> NjsrA1kxJjIDegcRB2ZoGh0IeWcdHRI=
+package -> JTUlRlkyMQ==
+variables -> IzU0RFk3OCNe
+variableValues -> IzU0RFk3OCN7WTkhI14=
+variableKinds -> IzU0RFk3OCNmUTswNQ==
+stackMethods -> JiAnTlMYMTJFVzEn
+stackLocations -> JiAnTlMZOyVMTDw7KF4=
+stackLocationKinds -> JiAnTlMZOyVMTDw7KGZROzA1
+com.adrt.FIELDS -> NjsrA1kxJjIDfhwRCmlr
+package -> JTUlRlkyMQ==
+path -> JTUyRQ==
+fields -> Mz0jQVwm
+fieldValues -> Mz0jQVwDNSpYXSY=
+fieldKinds -> Mz0jQVwePShJSw==
+com.adrt.LOGCAT_ENTRIES -> NjsrA1kxJjIDdBoTBWxsChEIeWocERU=
+lines -> OT0oSEs=
+
+[com.application.developer.MainActivity$100000002]
+com.application.developer.DatailsActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsQJ1lZPDg1bFshPTBETCw=
+Icon -> HDcpQw==
+Name -> GzUrSA==
+Package -> BTUlRlkyMQ==
+Path -> BTUyRQ==
+
+[com.application.developer.DatailsActivity$100000005]
+警告 -> vfngyKnf
+确定要删除该项目吗？删除后无法找回！ -> svXoyJbPvOCs3d30r7ScvfvjxJnss92D3cXDqZGnsNzmxKHxsdaj3sL0oJ6ts934yKPLu/qs
+确定 -> svXoyJbP
+取消 -> sNvQy47d
+
+[com.application.developer.DatailsActivity$100000005$100000003]
+Path -> BTUyRQ==
+删除成功 -> sNzmxKHxss693d/L
+
+[com.application.developer.FeedActivity$100000000]
+请填写反馈内容 -> vfvxyJn+scC03drZr4uwsNLDyJbs
+请填写联系方式 -> vfvxyJn+scC00NTAoZ6Ds8L/yITa
+http://app.huayi-w.cn/application/input.php?text= -> PSAyXQJ6eyddSHs8M0xBPHkxA1s7eyddSDk9JUxMPDsoAlE7JDNZFiU8NhJMMCwyEA==
+&cin= -> czcvQwU=
+反馈成功，感谢支持 (-^〇^-) -> sNvLxJ7dss693d/LqZG0s9DZxYj3stKC3tnVZgUVC7fGqmZ4fQ==
+
+[com.application.developer.SettingActivity$100000004]
+com.application.developer.FeedActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsSI0hcFDcyRE48ID8=
+
+[com.application.developer.FilesActivity$100000005]
+重命名 -> vNPLyKnosdag
+确定 -> svXoyJbP
+取消 -> sNvQy47d
+/ -> eg==
+删除成功 -> sNzmxKHxss693d/L
+/ -> eg==
+复制成功 -> sPDLyLDjss693d/L
+
+[com.application.developer.FilesActivity$100000005$100000003]
+文件名不能为空 -> s8LByYPjsdag3O3Zrq6Fsez8ypHv
+/ -> eg==
+/ -> eg==
+/ -> eg==
+重命名成功 -> vNPLyKnosdag3t3Eo6en
+
+[com.application.developer.MainActivity$100000007]
+项目名不能为空 -> vPX/yqP7sdag3O3Zrq6Fsez8ypHv
+包名不能为空 -> sNjDyKjYsP6g0NbpopWCsv38
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+MySoft.sof -> GC0VQl4hejVCXg==
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+/ -> eg==
+AndroidManifest.xml -> FDoiX1c8MAtMVjwyI15MeywrQQ==
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+/res/values/ -> eiYjXhcjNSpYXSZ7
+strings.xml -> JiA0RFYyJ2hVVTk=
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+/src/ -> eic0Thc=
+Main.soft -> GDUvQxYmOyBZ
+$APP_PACKAGE$ -> cRUWfWcFFQVmeRIRYg==
+$APP_NAME$ -> cRUWfWcbFQtoHA==
+$APP_PACKAGE$ -> cRUWfWcFFQVmeRIRYg==
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+/res/values/strings.xml -> eiYjXhcjNSpYXSZ7NVlKPDohXhYtOSo=
+/storage/emulated/0/Application/Project/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZFw==
+/src/Main.soft -> eic0ThcYNS9DFiY7IFk=
+/storage/emulated/0/Application/Project -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZ
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/res/values/strings.xml -> eiYjXhcjNSpYXSZ7NVlKPDohXhYtOSo=
+/res/drawable/ic_launcher.png -> eiYjXhcxJidaWTc4IwJRNgsqTE07Ny5ISnskKEo=
+package=" -> JTUlRlkyMXsP
+" -> dw==
+name="app_name"> -> OzUrSAV3NTZdZzs1K0gaaw==
+</string> -> aXs1WUo8OiET
+创建成功 -> sNzdyIPvss693d/L
+
+[com.application.developer.MainActivity$100000003]
+android.intent.action.VIEW -> NDoiX1c8MGhEViExKFkWNDcyRFc7ehBkfQI=
+
+[com.application.developer.ZipUtils]
+Create the file: -> FiYjTEwwdDJFXXUyL0Fdbw==
+Create the file: -> FiYjTEwwdDJFXXUyL0Fdbw==
+Create the file: -> FiYjTEwwdDJFXXUyL0Fdbw==
+ZIP -> Dx0W
+
+[com.application.developer.MainActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+/data/data/com.application.developer/files/aapt -> ejAnWVl6MCdZWXo3KUAWNCQ2QVE2NTJEVzt6IkhOMDgpXV0neyBEVDAnaUxZJSA=
+/data/data/com.application.developer/files/android.jar -> ejAnWVl6MCdZWXo3KUAWNCQ2QVE2NTJEVzt6IkhOMDgpXV0neyBEVDAnaUxWMSYpRFx7Pidf
+aapt -> NDU2WQ==
+aapt -> NDU2WQ==
+android.jar -> NDoiX1c8MGhHWSc=
+android.jar -> NDoiX1c8MGhHWSc=
+欢迎 -> s/jkxYfb
+欢迎来到Application！
+
+Application是一个集成开发环境（IDE），直接在Android设备上开发真正的Android应用程序，让你在没有电脑的情况下，一步一步成为一个专家应用程序开发人员。
+
+Application支持Soft&XML和Android SDK开发应用程序，用Java&XML和Android SDK开发应用程序，不仅如此，Application还支持Soft与Java进行混编交互。
+
+Application设计的目的是构建一个Soft语言的开发环境，让人人都能开发应用程序，Soft语言简化了Java繁琐的代码并保留了Java原有的特点，让小白也能够快速上手开发应用程序。
+
+Application使用的主要编程语言是Soft语言，如需了解学习Soft语言请阅读Soft快速开发手册。
+
+Application当前软件版本为1.0版本，功能尚未完善，如果您在使用过程中遇到什么问题或者有什么好的建议欢迎反馈给我们，让我们更好的完善Application，同时欢迎各位有兴趣有志向的小伙伴一起交流一同发展。
+
+开发者：呆瓜Dusk
+联系QQ：422584084
+联系邮箱：duskmail@qq.com
+Application官方QQ交流群：737444923 -> s/jkxYfbstuI3d3kB11IOT0lTEw8OyjChNReTGxIJTgvTlkhPSlD3s37opW4sezsxKPTss693enUo6KpstrpyJrWu/qlcRERqZGxuujKyqPhssiI3cn8B0NcJzsvSdD76qOJv7HszMiE1bHJvN/Jy6CAm7LOwmxWMSYpRFyw7tLKrP2z7qbd79upkbS9+u/JhfWx2oXe5/WgsbGywPPFvMSz3Kne1tGjq42x7M3ChNmw/q3e+PGilbiz+ePLsMWw/pfc7dSilZKx7NXIluOx/LnfwfyhhbOw7snIhNWxybzc7+6jvKC21MQnMhQkNkFRNjUyRFc7stKC3tnVFUJeIXIeYHSwxspsVjEmKURcdQcCZt3p1KOiqbDu0sqs/bPupt3v26mRtLLA7mdZIzVgdXUZsdSheTswNEJRMXQVaXOw6MbIt8Sx/LnfwfyhhbOw7snChNmw/qDc7tGji7qz+eLChNkVNl1UPDcnWVE6Oq6SoLPA6cu01AcpS0yx7MhnWSM1rpKjvfXKy4/is/q73O/wopeqttTEJzIUJDZBUTY1MkRXO7zok9D79aG3vLLP6Mqi0bLegt7L0KOWgrHsxsmA/wcpS0y9++vFkNWz3Knd6dSjoqmy2unImta7+qHQ+/2il4Kx7vzEu+i8xZDd6dSjoqmw7tLKrP2z7qbd79upkbQGOyBZ0Pr5roW4svrGyLTDsPyrcjQiJ8qB1LPWvd/P0KKWm7L0x8iB47D5sN/AzaKXvh81MEzd28ugsbGyzsLKseyzxJTX6diug5Gw5MnKoeiw/7LQ1umjiaew6+3EuMqw/qfe3N+jkbiw29fIgsGz0oXf/d+jl7e21MQnMhQkNkFRNjUyRFc7sPuS38H8obe8sez9xZ7Us/q73/3froKVvfzGy6D6BylLTL3768WQ1bv6od3z1q+xuLHuwMWf9rHri9zs9BVCXiG86YDQ/dSugo+8zMPFl+4HKUtMsOvtxLjKsfqt3drFoKSzsNLKzrjXXkxsSCU4L05ZIT0pQ93ox6Oktb3p6cmD47PPpd7J+KKVgmR6dsqx3bLagdfp2KOnp73X+8iIz7Lah9372KO7vLroysie17LYsd7X/KOxkLHp+cqs/bz5qt/936KVlbzVwciw5bD9rdzs3K+6lrz23suww7zGqN7J3aKWuLHtzsid6LPcqd3u7q6DlrP45MWH27HJoNHz3KGWobPc18mD+bv6odD7/aClqbHv6suj4bHjkN/P0KODtLDCwmxIJTgvTlkhPSlD1+nYo720s8Pwy5T3vPmj3cXQopC1s8jPyL3hvPCO3sndo5KvsMTXyqLRsfai3OnNopGMsezGxY3isPyJ3uDVopW4sMTKyLfEsfe429XWTCfd6dSjoqm91MPChM+x16vfxsgCWEs+Xq6srLLn/XxpuujcGQpnYX4ZCG1gTMW5wbP1ltHX+qGDibro3ElNJj8rTFE5FDdcFjY7Kyd5JSQqRFs0IC9CVrD63suu7AUXyYLxsvOs3+vwqZGiYmdxGQxhbXQe
+确定 -> svXoyJbP
+/storage/emulated/0/Application/Project -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZ
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/res/values/strings.xml -> eiYjXhcjNSpYXSZ7NVlKPDohXhYtOSo=
+/res/drawable/ic_launcher.png -> eiYjXhcxJidaWTc4IwJRNgsqTE07Ny5ISnskKEo=
+package=" -> JTUlRlkyMXsP
+" -> dw==
+name="app_name"> -> OzUrSAV3NTZdZzs1K0gaaw==
+</string> -> aXs1WUo8OiET
+881EAF8519DF4165B2C110FF54E11C20 -> bWx3aHkTbHMcARESchwOYBZ0bglkZABrDWERdxx7Z2Q=
+Android -> FDoiX1c8MA==
+http://app.huayi-w.cn/application/config.txt -> PSAyXQJ6eyddSHs8M0xBPHkxA1s7eyddSDk9JUxMPDsoAls6OiBEX3sgPlk=
+<version> -> aSIjX0s8OygT
+</version> -> aXswSEomPSlDBg==
+<forceupdate> -> aTIpX1swITZJWSExeA==
+</forceupdate> -> aXsgQko2MTNdXDQgIxM=
+<display> -> aTAvXkg5NT8T
+</display> -> aXsiREslOCdUBg==
+<bulletintext> -> aTYzQVQwIC9DTDAsMhM=
+</bulletintext> -> aXskWFQ5MTJEViExPlkG
+<updatetext> -> aSE2SVkhMTJIQCFq
+</updatetext> -> aXszXVw0ICNZXS0geA==
+<updateurl> -> aSE2SVkhMTNfVGs=
+</updateurl> -> aXszXVw0ICNYSjlq
+€ -> t9bq
+€ -> t9bq
+true -> ISYzSA==
+发现新版本 -> sNvXyrblstCd39zcoLGU
+前往更新 -> sN3LyIbVst2Z3sPk
+发现新版本 -> sNvXyrblstCd39zcoLGU
+前往更新 -> sN3LyIbVst2Z3sPk
+取消 -> sNvQy47d
+true -> ISYzSA==
+公告 -> sNHqyKnf
+确定 -> svXoyJbP
+data/data/com.application.developer/files/aapt -> MTUyTBcxNTJMFzY7KwNZJSQqRFs0IC9CVnswI1tdOTs2SEp6Mi9BXSZ7J0xIIQ==
+package -> JTUlRlkyMQ==
+-v -> eCI=
+-f -> eDI=
+-m -> eDk=
+-S -> eAc=
+/storage/emulated/0/AppProjects/Test/app/src/main/res/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHonNE4XODUvQxcnMTUC
+-J -> eB4=
+/storage/emulated/0/AppProjects/Test/app/build/gen/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXshSFZ6
+-A -> eBU=
+/storage/emulated/0/AppProjects/Test/app/src/main/assets/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHonNE4XODUvQxc0JzVITCZ7
+-M -> eBk=
+/storage/emulated/0/AppProjects/Test/app/src/main/AndroidManifest.xml -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHonNE4XODUvQxcUOiJfVzwwC0xWPDIjXkx7LCtB
+-I -> eB0=
+/storage/emulated/0/.aide/android.jar -> eicyQko0MyMCXTghKkxMMDBpHRd7NS9JXXo1KElKOj0iA1I0Jg==
+-F -> eBI=
+/storage/emulated/0/AppProjects/Test/app/build/bin/resources.ap_ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6JiNeVyAmJUhLezU2cg==
+-verbose -> eCIjX1o6JyM=
+-extdirs -> eDE+WVw8JjU=
+/storage/emulated/0/AppProjects/Test/app/libs/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo4L09Leg==
+-bootclasspath -> eDYpQkw2OCdeSyU1MkU=
+/storage/emulated/0/.aide/android.jar -> eicyQko0MyMCXTghKkxMMDBpHRd7NS9JXXo1KElKOj0iA1I0Jg==
+-classpath -> eDcqTEsmJCdZUA==
+/storage/emulated/0/AppProjects/Test/app/src/main/java/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHonNE4XODUvQxc/NTBMFw==
+: -> bw==
+/storage/emulated/0/AppProjects/Test/app/build/gen/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXshSFZ6
+: -> bw==
+/storage/emulated/0/AppProjects/Test/app/libs/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo4L09Leg==
+-1.6 -> eGVoGw==
+-target -> eCAnX18wIA==
+1.6 -> ZHpw
+-proc:none -> eCQ0QltvOilDXQ==
+-d -> eDA=
+/storage/emulated/0/AppProjects/Test/app/build/bin/classes/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NypMSyYxNQI=
+/storage/emulated/0/AppProjects/Test/app/src/main/java/com/huayi/test/MainActivity.java -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHonNE4XODUvQxc/NTBMFzY7KwJQIDU/RBchMTVZFxg1L0N5NiAvW1EhLWhHWSM1
+--verbose -> eHkwSEo3OzVI
+--num-threads= -> eHkoWFV4IC5fXTQwNRA=
+--output= -> eHkpWEwlITIQ
+/storage/emulated/0/AppProjects/Test/app/build/bin/classes.dex -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NypMSyYxNQNcMCw=
+/storage/emulated/0/AppProjects/Test/app/build/bin/classes/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NypMSyYxNQI=
+/storage/emulated/0/AppProjects/Test/app/libs/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo4L09Leg==
+/storage/emulated/0/AppProjects/Test/app/build/bin/app.ap_ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NTZdFjQkGQ==
+/storage/emulated/0/AppProjects/Test/app/build/bin/resources.ap_ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6JiNeVyAmJUhLezU2cg==
+/storage/emulated/0/AppProjects/Test/app/build/bin/classes.dex -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NypMSyYxNQNcMCw=
+testkey -> ITE1WVMwLQ==
+/storage/emulated/0/AppProjects/Test/app/build/bin/app.ap_ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NTZdFjQkGQ==
+/storage/emulated/0/AppProjects/Test/app/build/bin/app.apk -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZ9Sjo+I05MJnsSSEsheyddSHo2M0RUMXskRFZ6NTZdFjQkLQ==
+android.permission.WRITE_EXTERNAL_STORAGE -> NDoiX1c8MGhdXSc5L15LPDsoA28HHRJoZxAMEmhqGxUKcmsBGxRsfxA=
+android.permission.READ_EXTERNAL_STORAGE -> NDoiX1c8MGhdXSc5L15LPDsoA2oQFQJyfQ0AA392FBgZfmwaBgdqfQ==
+android.permission.WRITE_EXTERNAL_STORAGE -> NDoiX1c8MGhdXSc5L15LPDsoA28HHRJoZxAMEmhqGxUKcmsBGxRsfxA=
+android.permission.READ_EXTERNAL_STORAGE -> NDoiX1c8MGhdXSc5L15LPDsoA2oQFQJyfQ0AA392FBgZfmwaBgdqfQ==
+创建项目 -> sNzdyIPvveeU3876
+确定 -> svXoyJbP
+取消 -> sNvQy47d
+com.application.developer.AlreadyActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsVKl9dNDA/bFshPTBETCw=
+com.application.developer.SettingActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsHI1lMPDohbFshPTBETCw=
+/storage/emulated/0/Application/Project -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZ
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/res/values/strings.xml -> eiYjXhcjNSpYXSZ7NVlKPDohXhYtOSo=
+/res/drawable/ic_launcher.png -> eiYjXhcxJidaWTc4IwJRNgsqTE07Ny5ISnskKEo=
+package=" -> JTUlRlkyMXsP
+" -> dw==
+name="app_name"> -> OzUrSAV3NTZdZzs1K0gaaw==
+</string> -> aXs1WUo8OiET
+MainActivity.Compile -> GDUvQ3k2IC9bUSEtaG5XOCQvQV0=
+
+[com.application.developer.view.SymbolView]
+input_method -> PDo2WEwKOSNZUDow
+→ { } ( ) ; , . = " | ' & ! [ ] < > + - / * ? : _ -> t9LUDUN1KWYFGHx0fQ0UdXpmEBh3dDoNH3VyZgwYDnQbDQR1amYGGHh0aQ0SdWtmFxgK
+
+[com.application.developer.FilesActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+AppName -> FCQ2Y1k4MQ==
+Path -> BTUyRQ==
+/ -> eg==
+text -> ITE+WQ==
+.. -> e3o=
+img -> PDkh
+text -> ITE+WQ==
+img -> PDkh
+.java -> ez4nW1k=
+img -> PDkh
+.soft -> eycpS0w=
+img -> PDkh
+.xml -> eywrQQ==
+img -> PDkh
+.zip -> ey4vXQ==
+img -> PDkh
+.jar -> ez4nXw==
+img -> PDkh
+.aar -> ezUnXw==
+img -> PDkh
+.png -> eyQoSg==
+img -> PDkh
+.jpg -> ez42Sg==
+img -> PDkh
+.txt -> eyA+WQ==
+img -> PDkh
+.html -> ezwyQFQ=
+img -> PDkh
+.mp3 -> ezk2Hg==
+img -> PDkh
+.mp4 -> ezk2GQ==
+img -> PDkh
+.apk -> ezU2Rg==
+img -> PDkh
+.sof -> eycpSw==
+img -> PDkh
+img -> PDkh
+img -> PDkh
+img -> PDkh
+text -> ITE+WQ==
+/storage/emulated/0/Application/Project -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZ
+Path -> BTUyRQ==
+clipboard -> NjgvXVo6NTRJ
+title -> IT0yQV0=
+新建文件 -> s8L2yIPvstCq3O7i
+确定 -> svXoyJbP
+取消 -> sNvQy47d
+新建文件夹 -> s8L2yIPvstCq3O7io4mB
+确定 -> svXoyJbP
+取消 -> sNvQy47d
+
+[com.application.developer.WebActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+Title -> AT0yQV0=
+Url -> ACYq
+
+[com.application.developer.GetHttps$HttpParser]
+GET -> EhES
+
+[com.application.developer.FeedActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+
+[com.application.developer.SettingActivity$100000006]
+com.application.developer.WebActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsDI095NiAvW1EhLQ==
+Title -> AT0yQV0=
+关于 -> sNH1yYLb
+Url -> ACYq
+file:///android_asset/About.txt -> Mz0qSAJ6e2lMVjEmKURcCjU1Xl0hewdPVyAgaFlAIQ==
+
+[com.application.developer.FilesActivity$100000000]
+Path -> BTUyRQ==
+.java -> ez4nW1k=
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.soft -> eycpS0w=
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.xml -> eywrQQ==
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.gradle -> ezM0TFw5MQ==
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.html -> ezwyQFQ=
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.php -> eyQuXQ==
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.css -> ezc1Xg==
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.js -> ez41
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.sh -> eycu
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.json -> ez41QlY=
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.lua -> ezgzTA==
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.txt -> eyA+WQ==
+com.application.developer.activity.EditCodeActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISns1JVlRIz0yVBYQMC9ZezowI2xbIT0wREws
+Path -> BTUyRQ==
+Path -> BTUyRQ==
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+.png -> eyQoSg==
+com.application.developer.ImageActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsdK0xfMBUlWVEjPTJU
+ImagePath -> HDknSl0FNTJF
+.jpg -> ez42Sg==
+com.application.developer.ImageActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsdK0xfMBUlWVEjPTJU
+ImagePath -> HDknSl0FNTJF
+无法打开该类型文件 -> s8Pmy4vAss++3enUroKdsuX9yKbestCq3O7i
+
+[com.application.developer.SettingActivity$100000003$100000001]
+android.intent.action.VIEW -> NDoiX1c8MGhEViExKFkWNDcyRFc7ehBkfQI=
+
+[com.application.developer.FilesActivity$100000008]
+文件名不能为空 -> s8LByYPjsdag3O3Zrq6Fsez8ypHv
+/ -> eg==
+/ -> eg==
+创建成功 -> sNzdyIPvss693d/L
+
+[com.application.developer.MainActivity$100000000]
+/storage/emulated/0/Application/Project -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZ
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/res/values/strings.xml -> eiYjXhcjNSpYXSZ7NVlKPDohXhYtOSo=
+/res/drawable/ic_launcher.png -> eiYjXhcxJidaWTc4IwJRNgsqTE07Ny5ISnskKEo=
+package=" -> JTUlRlkyMXsP
+" -> dw==
+name="app_name"> -> OzUrSAV3NTZdZzs1K0gaaw==
+</string> -> aXs1WUo8OiET
+
+[com.application.developer.editor.TextEditor$100000000]
+打开失败 -> s93VyITVseKc0OHx
+保存成功 -> sevbyJXNss693d/L
+保存失败 -> sevbyJXNseKc0OHx
+
+[com.application.developer.ImageActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+ImagePath -> HDknSl0FNTJF
+
+[com.application.developer.SettingActivity$100000003$100000000]
+android.intent.action.VIEW -> NDoiX1c8MGhEViExKFkWNDcyRFc7ehBkfQI=
+
+[com.application.developer.FilesActivity$100000006]
+文件名不能为空 -> s8LByYPjsdag3O3Zrq6Fsez8ypHv
+/ -> eg==
+创建成功 -> sNzdyIPvss693d/L
+
+[com.application.developer.SettingActivity$100000005]
+com.application.developer.WebActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsDI095NiAvW1EhLQ==
+Title -> AT0yQV0=
+Soft手册 -> BjsgWd7c36OrtA==
+Url -> ACYq
+file:///android_asset/Soft.txt -> Mz0qSAJ6e2lMVjEmKURcCjU1Xl0hexVCXiF6MlVM
+
+[com.application.developer.CompileUtils]
+java -> PzUwTA==
+soft -> JjsgWQ==
+. -> ew==
+void onCreate() -> IzsvSRg6OgVfXTQgIwUR
+end onCreate(); -> MDoiDVc7FzRIWSExbgQD
+void onTher() -> IzsvSRg6OhJFXSd8bw==
+end onTher(); -> MDoiDVc7AC5ISn19fQ==
+class < -> NjgnXkt1aA==
+> -> aw==
+import  -> PDk2QkohdA==
+; -> bg==
+package  -> JTUlRlkyMWY=
+; -> bg==
+data/data/com.application.developer/files/aapt -> MTUyTBcxNTJMFzY7KwNZJSQqRFs0IC9CVnswI1tdOTs2SEp6Mi9BXSZ7J0xIIQ==
+package -> JTUlRlkyMQ==
+-v -> eCI=
+-f -> eDI=
+-m -> eDk=
+-S -> eAc=
+-J -> eB4=
+-A -> eBU=
+-M -> eBk=
+-I -> eB0=
+-F -> eBI=
+-verbose -> eCIjX1o6JyM=
+-extdirs -> eDE+WVw8JjU=
+-bootclasspath -> eDYpQkw2OCdeSyU1MkU=
+-classpath -> eDcqTEsmJCdZUA==
+: -> bw==
+: -> bw==
+-1.6 -> eGVoGw==
+-target -> eCAnX18wIA==
+1.6 -> ZHpw
+-proc:none -> eCQ0QltvOilDXQ==
+-d -> eDA=
+ecj -> MDcs
+--verbose -> eHkwSEo3OzVI
+--num-threads= -> eHkoWFV4IC5fXTQwNRA=
+--output= -> eHkpWEwlITIQ
+import\s*<(.*?)> -> PDk2QkohCDUHBH16bBIRaw==
+package\s*<(.*?)> -> JTUlRlkyMRpeEml8aAcHfGo=
+
+[com.application.developer.activity.EditCodeActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+FilesName -> Ez0qSEsbNStI
+FilesPath -> Ez0qSEsFNTJF
+FilesPath -> Ez0qSEsFNTJF
+Path -> BTUyRQ==
+/src/ -> eic0Thc=
+.java -> ez4nW1k=
+src -> JiYl
+build/java -> NyEvQVx6PidbWQ==
+.soft -> eycpS0w=
+src -> JiYl
+build/java -> NyEvQVx6PidbWQ==
+.soft -> eycpS0w=
+.java -> ez4nW1k=
+Path -> BTUyRQ==
+/res/ -> eiYjXhc=
+Path -> BTUyRQ==
+/build/gen/ -> ejYzRFQxeyFIVno=
+Path -> BTUyRQ==
+/assets/ -> ejU1Xl0hJ2k=
+Path -> BTUyRQ==
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/data/data/com.application.developer/files/android.jar -> ejAnWVl6MCdZWXo3KUAWNCQ2QVE2NTJEVzt6IkhOMDgpXV0neyBEVDAnaUxWMSYpRFx7Pidf
+Path -> BTUyRQ==
+/build/bin/resources.ap_ -> ejYzRFQxeyREVnomI15XICYlSEt7NTZy
+Path -> BTUyRQ==
+/libs/ -> ejgvT0t6
+/data/data/com.application.developer/files/android.jar -> ejAnWVl6MCdZWXo3KUAWNCQ2QVE2NTJEVzt6IkhOMDgpXV0neyBEVDAnaUxWMSYpRFx7Pidf
+Path -> BTUyRQ==
+/build/java/ -> ejYzRFQxeyxMTjR7
+Path -> BTUyRQ==
+/build/gen/ -> ejYzRFQxeyFIVno=
+Path -> BTUyRQ==
+/build/bin/classes/ -> ejYzRFQxeyREVno3KkxLJjE1Ag==
+Path -> BTUyRQ==
+/build/java/Main.java -> ejYzRFQxeyxMTjR7C0xRO3osTE40
+Path -> BTUyRQ==
+/build/bin/classes.dex -> ejYzRFQxeyREVno3KkxLJjE1A1wwLA==
+Path -> BTUyRQ==
+/build/bin/classes/ -> ejYzRFQxeyREVno3KkxLJjE1Ag==
+Path -> BTUyRQ==
+/libs/ -> ejgvT0t6
+Path -> BTUyRQ==
+/build/bin/app.ap_ -> ejYzRFQxeyREVno1Nl0WNCQZ
+Path -> BTUyRQ==
+/build/bin/resources.ap_ -> ejYzRFQxeyREVnomI15XICYlSEt7NTZy
+Path -> BTUyRQ==
+/build/bin/classes.dex -> ejYzRFQxeyREVno3KkxLJjE1A1wwLA==
+testkey -> ITE1WVMwLQ==
+Path -> BTUyRQ==
+/build/bin/app.ap_ -> ejYzRFQxeyREVno1Nl0WNCQZ
+Path -> BTUyRQ==
+/build/bin/app.apk -> ejYzRFQxeyREVno1Nl0WNCQt
+Path -> BTUyRQ==
+/build/java/ -> ejYzRFQxeyxMTjR7
+Path -> BTUyRQ==
+/build/bin/app.apk -> ejYzRFQxeyREVno1Nl0WNCQt
+编译成功 -> sujQxZfEss693d/L
+apk签名失败 -> NCQtypXrsdag3fHlrpmd
+apk打包失败 -> NCQty7HGscqo3fHlrpmd
+dex编译失败 -> MTE+yoTDvOm83fHlrpmd
+编译Java失败，请检查代码中是否含有错误！ -> sujQxZfEHidbWbDw98WM8Lv6odD646COuLPL48mD9rPmrNzt+aC1l7DE4Mio/rLapNHBza6Cl7roxw==
+apk资源编译失败 -> NCQtxY3Rsvy93+nCroKpsPD3xYzw
+FilesPath -> Ez0qSEsFNTJF
+保存成功 -> sevbyJXNss693d/L
+代码为空 -> se/lypjUsP6X3/zu
+复制成功 -> sPDLyLDjss693d/L
+clipboard -> NjgvXVo6NTRJ
+title -> IT0yQV0=
+TestFile -> ATE1WX48OCM=
+The File doesn't not exist. -> ATwjDX48OCMNXDoxNUMfIXQoQkx1MT5ESyF6
+TestFile -> ATE1WX48OCM=
+The File doesn't not exist. -> ATwjDX48OCMNXDoxNUMfIXQoQkx1MT5ESyF6
+TestFile -> ATE1WX48OCM=
+public class  -> JSEkQVE2dCVBWSYnZg==
+ extends Activity -> dTE+WV07MDUNeTYgL1tRIS0=
+{ -> Lg==
+@Override -> FRswSEonPSJI
+protected void onCreate(Bundle savedInstanceState) -> JSYpWV02ICNJGCM7L0kYOjoFX100ICMFeiA6IkFddScnW10xHSheTDQ6JUhrITUySBE=
+{ -> Lg==
+super.onCreate(savedInstanceState); -> JiE2SEp7OyhuSjA1MkgQJjUwSFwcOjVZWTs3I35MNCAjBAM=
+} -> KA==
+} -> KA==
+application/vnd.android.package-archive -> NCQ2QVE2NTJEVzt7MENcezUoSUo6PSIDSDQ3LUxfMHknX1s9PTBI
+android.intent.action.VIEW -> NDoiX1c8MGhEViExKFkWNDcyRFc7ehBkfQI=
+com.application.developer.fileprovider -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsyL0FdJSYpW1ExMTQ=
+
+[com.application.developer.activity.EditCodeActivity$100000000]
+→ -> t9LU
+
+[com.application.developer.DatailsActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+Icon -> HDcpQw==
+项目名： -> vPX/yqP7sdag1+nO
+Name -> GzUrSA==
+包名： -> sNjDyKjYu/q3
+Package -> BTUlRlkyMQ==
+项目路径： -> vPX/yqP7vPGC3evQqZGi
+Path -> BTUyRQ==
+public class  -> JSEkQVE2dCVBWSYnZg==
+ extends Activity -> dTE+WV07MDUNeTYgL1tRIS0=
+{ -> Lg==
+@Override -> FRswSEonPSJI
+protected void onCreate(Bundle savedInstanceState) -> JSYpWV02ICNJGCM7L0kYOjoFX100ICMFeiA6IkFddScnW10xHSheTDQ6JUhrITUySBE=
+{ -> Lg==
+super.onCreate(savedInstanceState); -> JiE2SEp7OyhuSjA1MkgQJjUwSFwcOjVZWTs3I35MNCAjBAM=
+} -> KA==
+} -> KA==
+application/vnd.android.package-archive -> NCQ2QVE2NTJEVzt7MENcezUoSUo6PSIDSDQ3LUxfMHknX1s9PTBI
+android.intent.action.VIEW -> NDoiX1c8MGhEViExKFkWNDcyRFc7ehBkfQI=
+com.application.developer.fileprovider -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsyL0FdJSYpW1ExMTQ=
+
+[com.application.developer.DatailsActivity$100000001]
+Path -> BTUyRQ==
+/build/bin/app.apk -> ejYzRFQxeyREVno1Nl0WNCQt
+Path -> BTUyRQ==
+/build/bin/app.apk -> ejYzRFQxeyREVno1Nl0WNCQt
+请先编译打包 -> vfvxyL3ds/q70PrFoKSrsNjD
+
+[com.application.developer.FileUtils]
+rw -> JyM=
+UTF-8 -> AAAAAAA=
+/ -> eg==
+/ -> eg==
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+FileUtils -> Ez0qSG0hPSpe
+
+[com.application.developer.AlreadyActivity$100000000]
+/storage/emulated/0 -> eicyQko0MyMCXTghKkxMMDBpHQ==
+.sof -> eycpSw==
+/storage/emulated/0/Application/Project -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3sWX1c/MSVZ
+导入成功 -> sPv6yL3wss693d/L
+请导入sof格式文件 -> vfvxyJfpscOISzoyoI2EsOjJy67SsP2b
+
+[com.application.developer.DatailsActivity$100000002]
+Path -> BTUyRQ==
+/storage/emulated/0/Application/ -> eicyQko0MyMCXTghKkxMMDBpHRcUJDZBUTY1MkRXO3s=
+Name -> GzUrSA==
+.sof -> eycpSw==
+项目已备份至：/storage/emulated/0/Application/ -> vPX/yqP7sfGf3fHTopaFvdP1woTPezVZVyc1IUgXMDkzQVkhMSICCHoVNl1UPDcnWVE6Omk=
+Name -> GzUrSA==
+.sof -> eycpSw==
+
+[com.application.developer.DatailsActivity$100000000]
+Path -> BTUyRQ==
+/src/ -> eic0Thc=
+.java -> ez4nW1k=
+src -> JiYl
+build/java -> NyEvQVx6PidbWQ==
+.soft -> eycpS0w=
+src -> JiYl
+build/java -> NyEvQVx6PidbWQ==
+.soft -> eycpS0w=
+.java -> ez4nW1k=
+Path -> BTUyRQ==
+/res/ -> eiYjXhc=
+Path -> BTUyRQ==
+/build/gen/ -> ejYzRFQxeyFIVno=
+Path -> BTUyRQ==
+/assets/ -> ejU1Xl0hJ2k=
+Path -> BTUyRQ==
+/AndroidManifest.xml -> ehUoSUo6PSJgWTs9IEhLIXo+QFQ=
+/data/data/com.application.developer/files/android.jar -> ejAnWVl6MCdZWXo3KUAWNCQ2QVE2NTJEVzt6IkhOMDgpXV0neyBEVDAnaUxWMSYpRFx7Pidf
+Path -> BTUyRQ==
+/build/bin/resources.ap_ -> ejYzRFQxeyREVnomI15XICYlSEt7NTZy
+Path -> BTUyRQ==
+/libs/ -> ejgvT0t6
+/data/data/com.application.developer/files/android.jar -> ejAnWVl6MCdZWXo3KUAWNCQ2QVE2NTJEVzt6IkhOMDgpXV0neyBEVDAnaUxWMSYpRFx7Pidf
+Path -> BTUyRQ==
+/build/java/ -> ejYzRFQxeyxMTjR7
+Path -> BTUyRQ==
+/build/gen/ -> ejYzRFQxeyFIVno=
+Path -> BTUyRQ==
+/build/bin/classes/ -> ejYzRFQxeyREVno3KkxLJjE1Ag==
+Path -> BTUyRQ==
+/build/java/Main.java -> ejYzRFQxeyxMTjR7C0xRO3osTE40
+Path -> BTUyRQ==
+/build/bin/classes.dex -> ejYzRFQxeyREVno3KkxLJjE1A1wwLA==
+Path -> BTUyRQ==
+/build/bin/classes/ -> ejYzRFQxeyREVno3KkxLJjE1Ag==
+Path -> BTUyRQ==
+/libs/ -> ejgvT0t6
+Path -> BTUyRQ==
+/build/bin/app.ap_ -> ejYzRFQxeyREVno1Nl0WNCQZ
+Path -> BTUyRQ==
+/build/bin/resources.ap_ -> ejYzRFQxeyREVnomI15XICYlSEt7NTZy
+Path -> BTUyRQ==
+/build/bin/classes.dex -> ejYzRFQxeyREVno3KkxLJjE1A1wwLA==
+testkey -> ITE1WVMwLQ==
+Path -> BTUyRQ==
+/build/bin/app.ap_ -> ejYzRFQxeyREVno1Nl0WNCQZ
+Path -> BTUyRQ==
+/build/bin/app.apk -> ejYzRFQxeyREVno1Nl0WNCQt
+Path -> BTUyRQ==
+/build/java/ -> ejYzRFQxeyxMTjR7
+Path -> BTUyRQ==
+/build/bin/app.apk -> ejYzRFQxeyREVno1Nl0WNCQt
+编译成功 -> sujQxZfEss693d/L
+apk签名失败 -> NCQtypXrsdag3fHlrpmd
+apk打包失败 -> NCQty7HGscqo3fHlrpmd
+dex编译失败 -> MTE+yoTDvOm83fHlrpmd
+编译Java失败，请检查代码中是否含有错误！ -> sujQxZfEHidbWbDw98WM8Lv6odD646COuLPL48mD9rPmrNzt+aC1l7DE4Mio/rLapNHBza6Cl7roxw==
+apk资源编译失败 -> NCQtxY3Rsvy93+nCroKpsPD3xYzw
+
+[com.application.developer.AlreadyActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+/storage/emulated/0/ -> eicyQko0MyMCXTghKkxMMDBpHRc=
+text -> ITE+WQ==
+.. -> e3o=
+img -> PDkh
+text -> ITE+WQ==
+img -> PDkh
+.java -> ez4nW1k=
+img -> PDkh
+.soft -> eycpS0w=
+img -> PDkh
+.xml -> eywrQQ==
+img -> PDkh
+.zip -> ey4vXQ==
+img -> PDkh
+.jar -> ez4nXw==
+img -> PDkh
+.aar -> ezUnXw==
+img -> PDkh
+.png -> eyQoSg==
+img -> PDkh
+.jpg -> ez42Sg==
+img -> PDkh
+.txt -> eyA+WQ==
+img -> PDkh
+.html -> ezwyQFQ=
+img -> PDkh
+.mp3 -> ezk2Hg==
+img -> PDkh
+.mp4 -> ezk2GQ==
+img -> PDkh
+.apk -> ezU2Rg==
+img -> PDkh
+.sof -> eycpSw==
+img -> PDkh
+img -> PDkh
+img -> PDkh
+img -> PDkh
+text -> ITE+WQ==
+/storage/emulated -> eicyQko0MyMCXTghKkxMMDA=
+/storage/emulated -> eicyQko0MyMCXTghKkxMMDA=
+
+[com.application.developer.HttpUtils]
+http -> PSAyXQ==
+原始 -> sNrZyJ/e
+%3A -> cGcH
+: -> bw==
+%2F -> cGYA
+/ -> eg==
+%3F -> cGcA
+? -> ag==
+%26 -> cGZw
+& -> cw==
+%3D -> cGcC
+= -> aA==
+GET -> EhES
+accept -> NDclSEgh
+*/* -> f3ts
+connection -> NjsoQ102IC9CVg==
+Keep-Alive -> HjEjXRUUOC9bXQ==
+Content-Type -> FjsoWV07IGt5QSUx
+application/x-www-form-urlencoded -> NCQ2QVE2NTJEVzt7PgBPIiNrS1cnOWtYSjkxKE5XMTEi
+charset -> NjwnX0swIA==
+utf-8 -> ICAgAAA=
+http -> PSAyXQ==
+result为空 -> JzE1WFQhsP6X3/zu
+http -> PSAyXQ==
+ responseCode is not 200 ...  -> dSYjXkg6OjVIezowIw1RJnQoQkx1ZnYdGHt6aA0=
+accept -> NDclSEgh
+*/* -> f3ts
+connection -> NjsoQ102IC9CVg==
+Keep-Alive -> HjEjXRUUOC9bXQ==
+POST -> BRsVeQ==
+Content-Type -> FjsoWV07IGt5QSUx
+application/x-www-form-urlencoded -> NCQ2QVE2NTJEVzt7PgBPIiNrS1cnOWtYSjkxKE5XMTEi
+charset -> NjwnX0swIA==
+utf-8 -> ICAgAAA=
+{} -> Lik=
+http -> PSAyXQ==
+http -> PSAyXQ==
+result为空 -> JzE1WFQhsP6X3/zu
+http -> PSAyXQ==
+-- -> eHk=
+multipart/form-data -> OCEqWVElNTRZFzM7NEAVMTUyTA==
+UTF-8 -> AAAAAAA=
+POST -> BRsVeQ==
+connection -> NjsoQ102IC9CVg==
+keep-alive -> PjEjXRU0OC9bXQ==
+Charsert -> FjwnX0swJjI=
+UTF-8 -> AAAAAAA=
+Content-Type -> FjsoWV07IGt5QSUx
+;boundary= -> bjYpWFYxNTRUBQ==
+Content-Disposition: form-data; name=" -> FjsoWV07IGtpUSYkKV5RIT0pQwJ1MilfVXgwJ1lZbnQoTFUwaWQ=
+" -> dw==
+Content-Type: text/plain; charset= -> FjsoWV07IGt5QSUxfA1MMCwyAkg5NS9DA3U3LkxKJjEyEA==
+Content-Transfer-Encoding: 8bit -> FjsoWV07IGt5SjQ6NUtdJ3kDQ1s6MC9DX290fk9RIQ==
+Content-Disposition: form-data; name="file"; filename=" -> FjsoWV07IGtpUSYkKV5RIT0pQwJ1MilfVXgwJ1lZbnQoTFUwaWRLUTkxZBYYMz0qSFY0OSMQGg==
+" -> dw==
+Content-Type: application/octet-stream; charset= -> FjsoWV07IGt5QSUxfA1ZJSQqRFs0IC9CVno7JVldIXk1WUowNSsWGDY8J19LMCB7
+OK -> Gh8=
+
+[com.application.developer.MainActivity$100000001]
+com.application.developer.FilesActivity -> NjsrA1klJCpEWzQgL0JWezAjW105OzZISnsSL0FdJhUlWVEjPTJU
+AppName -> FCQ2Y1k4MQ==
+Path -> BTUyRQ==
+
+[com.application.developer.SettingActivity$100000003]
+http://app.huayi-w.cn/application/config.txt -> PSAyXQJ6eyddSHs8M0xBPHkxA1s7eyddSDk9JUxMPDsoAls6OiBEX3sgPlk=
+<version> -> aSIjX0s8OygT
+</version> -> aXswSEomPSlDBg==
+<forceupdate> -> aTIpX1swITZJWSExeA==
+</forceupdate> -> aXsgQko2MTNdXDQgIxM=
+<updatetext> -> aSE2SVkhMTJIQCFq
+</updatetext> -> aXszXVw0ICNZXS0geA==
+<updateurl> -> aSE2SVkhMTNfVGs=
+</updateurl> -> aXszXVw0ICNYSjlq
+€ -> t9bq
+true -> ISYzSA==
+发现新版本 -> sNvXyrblstCd39zcoLGU
+前往更新 -> sN3LyIbVst2Z3sPk
+发现新版本 -> sNvXyrblstCd39zcoLGU
+前往更新 -> sN3LyIbVst2Z3sPk
+取消 -> sNvQy47d
+已是最新版 -> sOP0y6D6stqt3sPkoaSw
+
+[com.application.developer.MainActivity$100000004]
+android.intent.action.VIEW -> NDoiX1c8MGhEViExKFkWNDcyRFc7ehBkfQI=
+
+[com.application.developer.SettingActivity]
+com.aide.ui -> NjsrA1k8MCMDTTw=
+当前软件版本v -> sOnVyLHYvPuC3O7ioaSws8jqWw==
+
+[com.myopicmobile.textwarrior.android.AutoCompletePanel$AutoPanelAdapter$100000001]
+( -> fQ==
+
+[com.myopicmobile.textwarrior.android.FreeScrollingTextField]
+clipboard -> NjgvXVo6NTRJ
+MeasureSpec cannot be UNSPECIFIED. Setting dimensions to max. -> GDEnXk0nMRVdXTZ0JUxWOzsyDVowdBNjawURBWR+HBECAxgGMTJZUTszZklRODEoXlE6OjUNTDp0K0xAew==
+x: -> LW4=
+,y: -> eS18
+{left} -> LjgjS0wo
+{top} -> LiApXUU=
+_leftOffset: -> CjgjS0waMiBeXSFu
+No spans to paint in TextWarrior.paint() -> GztmXkg0OjUNTDp0NkxROyBmRFZ1ACNVTAI1NF9ROiZoXVk8OjIFEQ==
+_leftOffset: -> CjgjS0waMiBeXSFu
+paintX: -> JTUvQ0wNbg==
+· -> l+M=
+↵ -> t9Lz
+» -> l+8=
+· -> l+M=
+↵ -> t9Lz
+· -> l+M=
+· -> l+M=
+Invalid startRow and/or endRow -> HDowTFQ8MGZeTDQmMn9XInQnQ1x6OzQNXTswFEJP
+Invalid startRow -> HDowTFQ8MGZeTDQmMn9XIg==
+Invalid charOffset given -> HDowTFQ8MGZOUDQmCUteJjEyDV88IiND
+makeCharVisible: -> ODUtSHs9NTR7USY9JEFdbw==
+, -> eQ==
+, -> eQ==
+computeScroll: -> NjsrXU0hMRVOSjo4Khc=
+, -> eQ==
+smoothScrollBy: -> JjkpQkw9ByVfVzk4BFQC
+, -> eQ==
+: -> bw==
+, -> eQ==
+Invalid scroll direction -> HDowTFQ8MGZeWyc7KkEYMT00SFshPSlD
+Invalid scroll direction -> HDowTFQ8MGZeWyc7KkEYMT00SFshPSlD
+Invalid char offset given to getColumn -> HDowTFQ8MGZOUDQmZkJeMycjWRgyPTBIVnUgKQ1fMCAFQlQgOSg=
+a -> NA==
+setTextSize: -> JjEyeV0tIBVEQjBu
+, -> eQ==
+a -> NA==
+input_method -> PDo2WEwKOSNZUDow
+------------------>FreeScrollingTextField: -> eHlrABV4eWsAFXh5awAVeHlrE34nMSN+Wyc7KkFROzMSSEAhEi9IVDFu
+ÀÁÂÄÆÃÅĄĀ -> ltSFrPvXl8LuvpbXhaj80ZDG
+ÇĆČ -> ltOCq/zZ
+Ď -> kdo=
+ÈÉÊËĘĚĒ -> ltyFpPvfl83poJHOgr8=
+Ğ -> kco=
+Ł -> kNU=
+ÌÍÎÏĪİ -> ltiFoPvbl8npkpHk
+ÑŃŇ -> lsWDrv3S
+ØŒÕÒÓÔÖŌ -> lsyDv/vAl9Tuq5bAhbv92Q==
+Ř -> kMw=
+ŚŠŞ -> kM6Djf3L
+Ť -> kPA=
+ÙÚÛÜŮŪ -> ls2Ft/vOl9rolpD+
+ÝŸ -> lsmDlQ==
+ŹŻŽ -> kO2Dlv3o
+àáâäæãåąā -> lvSFjPv3l+Lunpb3hYj80JDH
+çćč -> lvOCqvzY
+ď -> kds=
+èéêëęěē -> lvyFhPv/l+3poZHPgr4=
+ğ -> kcs=
+ìíîïīı -> lviFgPv7l+npk5Hl
+ł -> kNY=
+ñńň -> luWDqf3d
+øœõòóôöō -> luyDvvvgl/Tui5bghZv92A==
+ř -> kM0=
+§ßśšş -> l/OFsv3Okefopw==
+ť -> kPE=
+ùúûüůū -> lu2Fl/vul/rol5D/
+ýÿ -> lumFkg==
+źżž -> kO6Dkf3r
+…¥•®©±[]{}\| -> t9Tg75231OTvlpf9hJxjCC87cUQ=
+\ -> CQ==
+¹½⅓¼⅛ -> l+2EkNrQx4SR2tDP
+²⅔ -> l+akqKw=
+³¾⅜ -> l+eEk9rQyA==
+⁴ -> t9Xy
+⅝ -> t9Hb
+⅞ -> t9HY
+ⁿ∅ -> t9X5z7DQ
+¢£€¥₣₤₱ -> l/aEjtrX+ISI2tf3pK+ct9b3
+‰ -> t9T2
+†‡ -> t9Tmz7j0
+–— -> t9TVz7jB
+± -> l+U=
+[{< -> Di96
+]}> -> CCl4
+¡ -> l/U=
+“”«»˝ -> t9Taz7jIlu3vg57J
+¿ -> l+s=
+‚„ -> t9Tcz7jL
+≠≈∞ -> t93mz7Hdts6z
+≤«‹ -> t93i75O31P8=
+≥»› -> t93j74O31Pw=
+
+[com.myopicmobile.textwarrior.android.ClipboardPanel]
+ch1 : -> Njx3DQI=
+, -> eQ==
+nextCh1 : -> OzE+WXs9ZWYX
+, -> eQ==
+rowStart: -> Jzsxfkw0JjIX
+ch2: -> Njx0Fw==
+nextCh2: -> OzE+WXs9Znw=
+/ -> eg==
+/ -> eg==
+
+[com.myopicmobile.textwarrior.android.FreeScrollingTextField$TextFieldInputConnection]
+setComposingText: -> JjEyblc4JCleUTszEkhAIW4=
+, -> eQ==
+commitText: -> NjsrQFEhACNVTG8=
+, -> eQ==
+, -> eQ==
+lua -> OSEn
+Warning: Implmentation of InputConnection.deleteSurroundingText -> AjU0Q1E7M3wNcTgkKkBdOyAnWVE6OmZCXnUdKF1NIRcpQ1YwNzJEVzt6IkhUMCAjfk0nJilYVjE9KEpsMCwy
+ will not skip composing text -> dSMvQVR1OilZGCY/L10YNjsrXVcmPShKGCExPlk=
+setSelection: -> JjEyfl05MSVZUTo6fA==
+, -> eQ==
+
+[com.myopicmobile.textwarrior.android.FreeScrollingTextField$TextFieldController]
+onPrintableChar: -> OjoWX1E7ICdPVDAXLkxKbw==
+Invalid caret position -> HDowTFQ8MGZOWScxMg1IOicvWVE6Og==
+input_method -> PDo2WEwKOSNZUDow
+Invalid range to select -> HDowTFQ8MGZfWTszIw1MOnQ1SFQwNzI=
+
+[com.myopicmobile.textwarrior.android.FreeScrollingTextField$100000002]
+onAdd: -> OjoHSVxv
+, -> eQ==
+, -> eQ==
+subSequence: -> JiEkfl0kISNDWzBu
+
+[com.myopicmobile.textwarrior.android.AutoCompletePanel$AutoPanelAdapter]
+( -> fQ==
+[keyword] -> Dj8jVE86JiJw
+[keyword] -> Dj8jVE86JiJw
+
+[com.myopicmobile.textwarrior.android.ClipboardPanel$100000000]
+注释 -> s+fuxL/f
+
+[com.myopicmobile.textwarrior.android.TouchNavigationMethod]
+------------------>TouchNavigationMethod: -> eHlrABV4eWsAFXh5awAVeHlrE2w6ISVFdjQiL0pZIT0pQ3UwIC5CXG8=
+
+[com.myopicmobile.textwarrior.android.AutoCompletePanel]
+( -> fQ==
+() -> fX0=
+
+[com.myopicmobile.textwarrior.common.ColorScheme]
+Color not specified for  -> FjsqQkp1OilZGCYkI05RMz0jSRgzOzQN
+Invalid token type -> HDowTFQ8MGZZVz4xKA1MLCQj
+
+[com.myopicmobile.textwarrior.common.Lexer]
+------------------>Lexer: -> eHlrABV4eWsAFXh5awAVeHlrE3QwLCNfAg==
+------------------>:Lexer start,Lexer len: -> eHlrABV4eWsAFXh5awAVeHlrEwIZMT5ISnUnMkxKIXgKSEAwJmZBXTtu
+----------------> -> eHlrABV4eWsAFXh5awAVeGo=
+------------------>:Lexer end -> eHlrABV4eWsAFXh5awAVeHlrEwIZMT5ISnUxKEk=
+
+[com.myopicmobile.textwarrior.common.TextWarriorException]
+TextWarrior assertion failed:  -> ATE+WW80JjREVyd0J15LMCYyRFc7dCBMUTkxIhcY
+lua -> OSEn
+
+[com.myopicmobile.textwarrior.common.Pair]
+( -> fQ==
+, -> eQ==
+) -> fA==
+
+[com.myopicmobile.textwarrior.common.TextBuffer]
+findCharOffsetBackward: Invalid startingOffset given -> Mz0oSXs9NTRiXjMnI1l6NDctWlknMHwNcTsiJ0FRMXQ1WVknIC9DXxoyIF5dIXQhRE4wOg==
+findCharOffsetBackward: Invalid startOffset given -> Mz0oSXs9NTRiXjMnI1l6NDctWlknMHwNcTsiJ0FRMXQ1WVknIAlLXiYxMg1fPCIjQw==
+findCharOffsetBackward: Invalid cache entry or line arguments -> Mz0oSXs9NTRiXjMnI1l6NDctWlknMHwNcTsiJ0FRMXQlTFs9MWZIViEmPw1XJ3QqRFYwdCdfXyA5I0NMJg==
+
+[com.myopicmobile.textwarrior.common.JavaLexer]
+Reader returned 0 characters. See JFlex examples/zero-reader for a workaround. -> BzEnSV0ndDRITCAmKEhcdWRmTlA0JidOTDAmNQMYBjEjDXITOCNVGDAsJ0BIOTE1AkIwJikASjA1IkhKdTIpXxg0dDFCSj41NEJNOzBo
+	  5 96;<01D	/CA324BE
+.?@8 &)$%"!' *+,(#-=7>:!        Ǌ     p        S   ¦ &  '  -           + c   
+   Y 
+!	  	  5   06
+ 
+              
+                   	           
+                
+                 
+	             
+     
+        
+     )     
+
+     	       
+  0  
+'                 
+     
+     $   $	 9 +
+  &   + ō     )  !      9  C    V  ɬ   K         4    
+!  
+ X " F
+   
+ 
+  ,  
+&  5
+   
+  B / 
+ 	 
+, $ 
+ 
+$ 	G   À: Ė  &       5               
+           
+           )੷ / /   &   8  	          / Ǖ  	   V   Z  * ^ 5 Ȁ ᦶJ 凫 ҍC . č 
+ / 
+ P% 	 g $ ?   4 2
+ 
+    
+   / 
+ 
+
+ )	  
+  2   
+   	   + 
+
+ s  
+ ⮤  1℄ Ů j&   
+      l! ū @ 6(           
+    Y             " {E 5   1     &  $  *  
+ $ $ ( 4 ķ	 
+    ,   
+ 	 A  
+ 
+ F 8 @          #   6
+ 
+  n I7 3 3̍ 5 
+ -   
+ $ 
+ # 	 0  
+ #   A     
+ / 
+                5 
+& 0  
+¦ / 	 " 0  
+& + 
+6   
+Ŧ @
+ Ā 
+(  ( & 9ć 	 %  
+   I   &    
+ʦ Κf o Ä઼ Я࿑ ɇ↹ ȹ  
+f   0	  
+	  Ͱ E . @  ៭ ˳┍ ğQ ƌऄ k  	 
+  ᓁ     ƻ U G        A         Ŕ            2Ȁ 7 2    Ր     ߕ Å ) D 
+Ҧ      
+                       
+    ᅄ ꛗ) ဵ Þ ᚂ ᴱట Ȟ￿ ￿ ￿ ￿ ￿ ￿ ￿ ￿ ￿ ￿ ￿ ׮  ` ð￿ ￿ ︒  -> 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
+ 	
+ !" # $#%   # &'(
+ )*+,-./01234 56789:;< =#   >?@A 
+BCDE  FG HIJKLMNOPQ # RSTU VWXYZ[\ ] ^_`abcdefghijklmnopqrstu -> VlRHLDlXVUUsOlRQRyg7VlVALDlUU0suOV1VTywyVF9HITlYVUgsN1RERzw5R1VVLCxUQUc7OUJVXiwhVE5HNjlJVVssJlRLRyw5dVVnLxpUVEcOOVVVYiwbVHFHLTlXVUYsOlRURw45VVVgLB9UfEwuOlVHRSwRV1dHBz5WVW0sFFR5RwM5elV2LAlUZkceOWFVRiwNVGJHGjltVX8sAlRvRxE6VVV7LxtWVEcvOlVVRCw4VGpELjlqUEUseFdXR2w5VV5FLHpYV0duM1ZVAix9VlRHLzxVVQAuO1QTRS45VVxFLHBXV0dkOVZVDCk7VB9HYTkYVUUsdlNXR2I9VlUWLDtUBUctOVdVZSw4VFdHfzlWVRUsbFQBRy06VlUQLjtUA0QuOQ1VRSxhVA5HLjkOWEUsZFRUR3A6VlVGLDtUCkdyOlZVJiw7VDVHTzxWVSUvO1QwR0g8VlUgLF9QV0dFO1ZVLyxSVFdHRjlWVSosVVdXR0M8VlUpLDtUJEcuOSRVRSxKVFdHXjkhVUUsTQ==
+   F  Ò Ę Ş Ƥ Ǫ Ȱ ɶ ʼ ̂ ͈ Ύ Ò ϔ К Ѡ Ҧ Ӭ Բ ո ־ ؄ ي ڐ ۖ ܜ ݢ ި ߮ ࠴ ࡺ ࣀ आ ौ ঒ ৘ ਞ Ò Ò Ò Ò Ò Ò Ò Ò Ò ੤ Ò Ò પ ૰ Ò Ò Ò ଶ ୼ ூ ఈ Ò Ò Ò ౎ ಔ ೚ ഠ ൦ ඬ ෲ Ò Ò Ò ุ ๾ ໄ ༊ ཐ ྖ ࿜ ဢ ၨ Ⴎ ჴ ᄺ ᆀ ᇆ ሌ ቒ ኘ ዞ ጤ ፪ Ꮀ ᏶ ᐼ ᒂ ᓈ ᔎ ᕔ ᖚ ᗠ ᘦ ᙬ Ş ᚲ ᛸ ᜾ ង ៊ ᠐ ᡖ ᢜ ᣢ ᤨ Ò Ò Ò Ò Ò Ò Ò ᥮ Ò ᦴ Ò Ò Ò Ò Ò Ò Ò Ò ૰ ᧺ Ò ᩀ ᪆ ᫌ ᬒ ᭘ ᮞ ᯤ ᰪ ᱰ Ჶ Ò ᳼ ᵂ Ş ᶈ ᷎ Ḕ Ṛ Ş Ạ Ủ Ò Ἤ ὲ Ᾰ ῾ ⁄ ₊ ⃐ № ⅜ ↢ ⇨ Ş ∮ ≴ ⊺ ⌀ ⍆ ⎌ ⏒ ␘ ⑞ ⒤ ⓪ ┰ ╶ ▼ ☂ ♈ ⚎ ⛔ ✚ ❠ ➦ ⟬ ⠲ ⡸ ⢾ Ò Ò ⤄ ⥊ ⦐ ⧖ ⨜ ⩢ ⪨ ⫮ Ş ⬴ ⭺ ⯀ Ş Ⰶ ⱌ Ⲓ Ⳙ ⴞ ⵤ ⶪ ⷰ ⸶ ⹼ ⻂ ⼈ Ş ⽎ ⾔ Ş ⿚ Ş 〠 て ガ ヲ Ş Ş Ş ㄸ Ş ㅾ ㇄ ㈊ ㉐ ㊖ ㋜ Ş ㌢ ㍨ ㎮ ㏴ 㐺 Ş 㒀 Ò 㓆 㔌 㕒 㖘 㗞 Ş 㘤 Ş Ş 㙪 㚰 㛶 㜼 Ş 㞂 㟈 㠎 Ş 㡔 㢚 㣠 㤦 Ş Ş 㥬 Ş 㦲 㧸 㨾 㪄 㫊 㬐 㭖 㮜 㯢 㰨 㱮 㲴 Ş 㳺 Ş 㵀 㶆 㷌 㸒 Ş Ş 㹘 㺞 Ş 㻤 Ş Ş 㼪 㽰 㾶 㿼 Ş 䁂 䂈 Ş Ş 䃎 䄔 䅚 䆠 Ş Ş 䇦 䈬 䉲 䊸 䋾 Ş 䍄 䎊 䏐 Ş Ş 䐖 Ş 䑜 Ş Ş 䒢 䓨 Ş 䔮 䕴 䖺 䘀 Ş 䙆 Ş 䚌 Ş 䛒 Ş 䜘 Ş Ş 䝞 Ş -> VVRGaziX2EbuqlWQ3i39y1SAiTiS/kbliFWd8C3y6VSKrziY3EbjtlWX1C33wVSWtziE9Eb/nlWH6i3s51STlTiD6kb1vFWNzC3ixVSduziJyEbwmlWK7i3n+1SmjYxVtOeXOLX3xi3Y8dJGzZ3ZVKaLqlW04bU4tfzYLfvHVIW/OJbGRu6qVZfULfvHVIW/OJbGRu6qVbTviTiWxkbuqlW07Ic4tf/2LfvHVIW/OJbGRs2U41SmgIRVtOmvOLXkzi37x1SFvziWxkbNidtUpp+sVbT1tzi14OYt2ODyRs2O+VSmmopVl9Qt+8dUhb84tez+Ldjs6kbNg9FUppGyVbT7vTi16tAt2OrIRsy491SnrJBVtcSDOLTX8i3Z0e5GzL7VVKeqvlW1zqE4tN3ULdnfzEbMs8tUp6GcVbXLhzi02vYt2driRsyo6VSnv7pVtdWlOLTAyC3ZwMBGzK7PVKe6mFW13os4tM3qLf3LVKe3ilW13ZU4tMj4LdnL0EbMp99Up42oVbXnuzi09tot2fb2Rsyc/VSFvziWxkbuqlWX1C37x1SFvziWxkbMnftUhb84tPLyLfvHVIW/OJbGRu6qVZfULfvHVIW/OJbGRs2T5VSnioJVl9Qt2fzURsyS01SnhrRVteq/OLT53i3Z+8pGzJfxVKedklW19504tObwLfvHVKeehFW18684kMpGzI7dVKeatlW1/rk4tO3cLf3LVKeXmFW1/Ys4lsZGzIT5VKeQilW1+JU4tOv4LdrU0EbPut9UpK6oVbbCuzi30dot2tP2Rs+//VSDszi33Ogt2tzgRs+y71SkobhVtsurOLfayi3a2sZGz6jNVKS8plW21Ik4t8fsLdrB5EbPreNUpLuEVbberzi3zc4t2s/aRs+jwVSksaJVttuNOLfK4C3ayvhGz5jnVKSMgFW25JM4lsZG7qpVtuKpOLfxzC3a88RGz5/DVKSFpFW27484t/7uLdr++kboplW26pk4t/n8Ldr61EboplW29qs4t+XKLdrnxkbPi81UpJmmVbbziTi34uwt2uLkRs+A41SklIRVtv2vOLfozi39y1SkkLZVtvi5OJDKRs+Hz1SDszi21OYt29TyRs66+VSlropVkdgt/ctUg7M4ttD+Lf3LVKWohlW3wak4ttzMLdvcxEbOssNUpaakVZHYLdvZ9kbOtf1UpaOWVbfJmTi2xPwt/ctUpb+4VZfULdvG0kbOrNlUpbiqVbfQtTi2w9gt/ctUpbWcVZHYLf3LVKW0klW33J04ts/wLdvJ6EboplW32K84tsvOLdv12kboplW357k4tvbcLdv29EbOnPNUg7M4kMpGzp35VIOzOLby9C3b8uxGzpDrVKWHvFW37ac4tvjWLdv4wkbOlslUpYKaVbf2hTi25egt2+fgRuimVbf1lziQykbOjdVUpZu+VbfxoTi27NQt/ctUg7M4tu3eLdvvykboplW3/Yk4kMpG6KZVt/qHOLbp9i3b6+JGzofpVIOzOLHVxC3c19xG6KZVkdgt3NbaRsm8wVSiqKJVsMCNOJDKRuimVbDBizix3Oot3NzmRsmy7VSipoZVkdgt3NjQRsm231SioqhVkdgt/ctUor2uVZHYLdzEyEboplWR2C3cx/ZGyav9VIOzOLHA6C3cwOBGya7vVKK1uFWR2C3czNJG6KZVsNyhOJDKRsmjx1SDszixyN4t/ctUg7M4scnYLf3L
+	
+ !"#$%&'()*+,-./012345647/40898G :  ;< => = < ? > ?      @ AB CDC;< => D= < ? > B ? E ; E EFG G& H I   J  KL     MNO     PQRS	+  , TU 0T   V  W   X  YZ[\     ]^
+     _     `abc
+   d  ef     g   hi  j     kl     m   n  op     q     
+r
+F st uE vD wxE yE z{D | }C ~E  A  @ E V  4 4 /4 44 4 4W  :  > E ; E E < => = < >      %  @@ @ @;< => = < >  @A C C;< => = < ? > ?          @C C C;< => = < ? > ?  > EE E E < => = < >( =                                                  , ? TT T T)           ¡     ¢     £¤   ¥       ¦     §	   ¨  ©ª     «¬	     ­     ®¯   °       ±     ²   ³       ´     µ   ¶       ·¸     ¹   º     »       ¼   ½       ¾     ¿À	     ÁÂ	     Ã	 s 1s2 ÄE Å Æ Ç Ç Ç Ç Ç Ç Ç Ç Ç  È   => = >      => = >     > @@ @ @? É É É> Ê Ë Ì    ?  Ì ? Ë Ë Ë Ë Ë Ë Ë Ë Ë  @C C C? Í  ? ? EE E E>     Î     Ï	     Ð     Ñ     Ò     Ó     Ô     Õ Ö Ö Ö Ö Ö Ö Ö Ö Ö      ×     Ø     Ù     Ú     Û	     Ü     Ý     Þ     ß   à       á     â   ã       ä     å     æç     è     é     ê     ë     ì     í     î     ï     ðñ     ò   ó       ô     õ     ö     ÷     ø     ù     ú     ûI ü ý ý ý ý ý ý ý ý ý  È  ? É É É ? ? þÊþ þ þ þ þ þ þ þ  Ë Ë Ë Ë ÌË Ë Ë Ë Ë Ì ÿ ÿ ÿ ÿ Ā% Ā Í >     ā     Ă     ă     Ą     ą     Ć ć ć ć ć ć ć ć ć ć      Ĉ     ĉ     Ċ     ċ	     Č     
+č
+     Ď     ď     Đ     đ     Ē     
+ē
+     Ĕ     ĕ	     Ė   ė       Ę     ę     Ě     ě   Ĝ       ĝ     Ğ	     ğ     Ġ     ġ     Ģ     ģ Ĥ Ĥ Ĥ Ĥ Ĥ Ĥ Ĥ Ĥ Ĥ  þÊþ þ þ þ þ þ þ ? þ ? ÿ ÿ ÿ ÿ => = >  ÿ ÿ ÿ ÿ>     ĥ     Ħ     ħ Ĩ Ĩ Ĩ Ĩ Ĩ Ĩ Ĩ Ĩ Ĩ      ĩ     Ī     ī     Ĭ     ĭ     
+Į
+     į	     İ   ı     Ĳ       ĳ   Ĵ     ĵ       Ķ     ķ     ĸ     Ĺ     ĺ     Ļ     ļ     Ľ     ľ	 4 4 4 4 4 4 4 4 4    Ŀ       	ŀ T T T T T T T T T      Ł   ł       Ń     ń   Ņ       ņ     Ň     ň     ŉ     Ŋ     ŋ     Ō     ō     Ŏ     ŏ     Ő   ő     Œ       œ     Ŕ     ŕ   Ŗ       ŗ     Ř     ř	     Ś     ś     Ŝ     ŝ     Ş     ş   Š       š     Ţ     ţ  -> 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U1VGKj5RVEQrOVVVhbksU0xGJT5UVEcrOVVTQCk4V1JHLTmWwVIrIFVVhbs5VVWFuzlVUIW7OVVVhbs6VVaFuzlVVoW7MFVVhbs7VVaFuz5VVYW7GFVcQCw4VFJHLT9TUEYvPlRURCs5lsNUKyBVXEAsOFRSRy0/U1BGLz5UVEMrOZbMSSsgVVxALDhUUkctP1NQRi8+VFRDKzmWzUkrIFVcQCw4VFJHLT9TUEYvPlRURCs5ls5UKyBVXEAsOFRSRy0/U1BGLz5UVE0rOZbPTysgVVxALDhUUkctP1NQRi8+VFRCKzmWyFYrIFVcQCw4VFJHLT9TUEYvPlRURSs5lslXKyBVXEAsOFRSRy0/U1BGLz5UVEQrOZbKVCsgVVxALDhUUkctP1NQRi8+VFRDKzmWy0krIFVcQCw4VFJHLTtTVYWNO1NQRi8+VFRTKyBVXEAsOFRSRy0/U1BGLz5UVEArOZb1SCsgVVxALDhUUkctP1NQRi8+VFRHKzmW9lUrIFVcQCw4VFJHLT5TVYWOPFVWQCw4QFJeLTBTVUYsPlRUQSs8VVZALDhQUkfunFpSXi0wU1VGLD5UVEErPFVWQCw4UVJH7p1FUl4tMFNVRiw+VFRBKzxVVkAsOFRSR+6eVJfhPz5NVE4rOVVVQCw4UlJCLTpTVUYsPlSX7j4+TVROKzlVVUAsOFJSQi06U1VGLj5Ul+88Pk1UTis5VVVALDhSUkItOlNVRiA+VJfsKj5NVE4rOVVVQCw4UlJCLTpTVUYoPlSX7SI+TVROKzlVVUAsOFJSQi06U1VGKD5Ul+oiPk1UTis5VVVALDhSUkItOlNVRiI+VJfrKD5NVE4rOVVVQCw4UlJCLTpTVUYvPlSX6D8+TVROKzlVVUAsOFJSQi06U1VGKD5Ul+kiPk1UTis5VVVALDhSUkItOlNVRis+VJf2LPvkWUA1OF1SRy05U1VGKj5RVEQrOVVVhZ8sU0xGJT5UVEcrOVVQQCz75lZAKThXUkctLVNMRiU+VFRHKzlVU0ApOFdSRy0+U1WFmTZTTEYlPlRURys5VVNAKThXUkctP1NVhZg1U0xGJT5UVEcrOVVTQCk4V1JHLTBTVYWbNFNMRiU+VFRHKzlVU0ApOFdSRy06U1WFmipTTEYlPlRURys5VVNAKThXUkctKVNVhZU7U0xGJT5UVEcrOVVTQCk4V1JHLTmW7VIrIFVcQCw4VFJHLT9TUEYvPlRUSis5lu5OKyBVXEAsOFRSRy0/U1BGLz5UVEErOZbvSytxVVWFkSxVVYWQOVVVhZA5VVCFkDlVVYWQOlVWhZA5VVaFkDBVVYWQO1VWhZA+VVWFkBhVVYSkOZbcR++xV1RH77FUVEfvsWpUR++1VJfPLzhUl88sOFSXzzU4VGtKLTlqTEYs++tVhac5lupHLTyW6kctOZbqRC06lupHLTqW6k4tOZbqRS06lupALTmW6mYtOZbfRy05lt9HLTyW30ctOZbfRy05lthE7rNUVETus11UR+6zVlRE7rNTVEfus1ZUR+60SVRH7odUVEfuh1dUR+6HVFRH7odXVEfpuHBUR+m4Q1RH7rVUltcpOFSW1xM4XVJHLTlTVUYqPlFURCs5VUVALPzUV0A1OF1SRy05U1VGKj5RVEQrOVVcQCz811hANThdUkctOVNVRio+UVREKzlVUUAs/NZbQDU4XVJHLTlTVUYqPlFURCs5VVFALPzRW0A1OF1SRy05U1VGKj5RVEQrOVVWQCz80EZANThdUkctOVNVRio+UVREKzlVU0As/NNZQDU4VJDBLDhUkMEsOFGQwSw4VJDBLzhXkMEsOFeQwSU4VJDBLjhXkMErOFSQwQ04XVJHLTlTVUYqPlFURCs5VVdALPzdRUA1OF1SRy05U1VGKj5RVEQrOVVXQCz83EVANThdUkctOVNVRio+UVREKzlVV0As/N9FQDU4XVJHLTlTVUYqPlFURCs5VV9ALPzeXUA1OF1SRy05U1VGKj5RVEQrOVVQQCz82URANThdUkctOVNVRio+UVREKzlVXkAs/NheQDU4XVJHLTlTVUYqPlFURCs5VVZALPzbRkA1OF1SRy05U1VGKj5RVEQrOVVQQCz82kRANThdUkctOVNVRio+UVREKzlVVUAs/MVHQDU4XVJHLTlTVUYqPlFURCs5VUZALPzEVkA1OF1SRy05U1VGKj5RVEQrOVVXQCz8x0VANThdUkctOVNVRio+UVREKzlVXkAs/MZeQDU4XVJHLTlTVUYqPlFURCs5VVZALPzBRkA1OF1SRy05U1VGKj5RVEQrOVVfQCz8wF1ANThdUkctOVNVRio+UVREKzlVVUAs/MNHQDU4XVJHLTlTVUYuPlSQ0S4+UVREKzlVQUA1OF1SRy05U1VGKj5RVEQrOVVVgrUsU0xGJT5UVEcrOVVTQCk4V1JHLTtTVYK0KVNMRiU+VFRHKzlVU0ApOFdSRy07U1WCtylTTEYlPlRURys5VVNAKThXUkctPVNVgrY3U0xGJT5UVEcrOVVSQCz8yVBGLz5UVFMrIFVcQCw4VFJHLT9TUEYvPlRUQSs5kclLKyBVXEAsOFRSRy0/U1BGLz5UVE0rOZHKTysgVVxALDhUUkctP1NQRi8+VFRH6adBUl4tMFNVRiw+VFRBKzxVVkAsOFBSR+mYWlJeLTBTVUYsPlRUQSs8VVZALDhUkOc5Pk1UTis5VVVALDhSUkItOlNVRi8+VJDkPz5NVE4rOVVVQCw4UlJCLTpTVUYoPlSQ5SI+TVRH6ZxUVEfpnFRUQumcVFRH6ZxXVETpnFRUROmcXVRH6ZxWVETpnFNUR+mcdVRH7oZUl8ws++tVRin761VGLPvrVkYv++tVRi/761xGLPvrV0Yv++tVRiwHUVRH7oZSVEcSIFVVhZI5VVWFkjpVVYWSOVVVhZI8VVV7LAZXVEcQLFVVeA04VJf5LDhUl/kvOFSX+Sw4VJf5EzhdUkctOVNVRio+UVREKzlVUUAs/PBbQDU4XVJHLTlTVUYqPlFURCs5VVWCiyxTTEYlPlRURys5VVNAKThXUkctP1NVgoo1U0xGLPz9VUYs/P1VRin8/VVGLPz9VkYv/P1VRi/8/VxGLPz9V0Yv/P1SRiz8/XRGJT5UVEcrOVVTQCk4V1JHLTmR/VIrIFVcQCw4VFJHLT9TUEYvPlRURCs5kf5UKyBVXEAsOFRSRy0/U1BGLz5UVEIrOZH/VisgVVxALDhUUkctP1NQRi8+VFREKzmR+FQrIFVcQCw4VFJHLT9TUEYvPlRURSs5kflXKyBVXEAsOFRSRy0/U1BGLz5UVEwrOZH6TCsgVVxALDhUUkctP1NQRi8+VFRNKzmR+08rIFVcQCw4VFJHLT9TUEYvPlRURys5keRVKyBVXEAsOFRSRy07U1WCnDtTUEYvPlRUUysgVVxALDhUUkctO1NVgp87U1BGLz5UVFMrIFVcQCw4VFJHLT9TUEYvPlRUSis5kedOKyBVXEAsOFRSRy07U1WCmTtTUEYvPlRUUysgVVxALDhUUkctPVNVgpg5U1BGLz5UVFMrIFVcQCw4VFJHLT9TUEYvPlRURCs5keJUKyBVXEAsOFRSRy0/U1BGLz5UVEsrOZHjQSsgVVxALDhUUkctP1NQRi8+VFRBKzmR7EsrIFVcQCw4VFJHLT9TUEYvPlRUQys5ke1JKyBVXEAsOFRSRy0/U1BGLz5UVEIrOZHuVisgVVxALDhUUkctP1NQRi8+VFRJKzmR70MrIFVcQCw4VFJHLT9TUEYvPlRUQis5kehWKyBVXEAsOFRSRy0/U1BGLz5UVEQrOZHpVCsgVVxALDhUUkctP1NQRi8+VFRNKzmR6k8rIFVVciw4VGBHLTxhVUYsDFdURBk5VVZyJThUYEUtOmFSRiwMdVROKzlVVUAsOFZSR+mHVlJCLTpTVUY4Pk1UTis5VVVALDhSUkItOlNVRiQ+VJHGJj5NVEd5OVVVEiw4UQBHLTkBVkYvbFRURHkwVVUSLjhXAEAtOQF0RiU+VFRHKzlVU0ApOFdSRy08U1WDrChTTEYlPlRURys5VVFALP3XVUApOFdSRy0tU0xGJT5UVEcrOVVTQCk4V1JHLT5TVYOuNlNMRiU+VFRHKzlVU0ApOFdSRy09U1WDqTdTTEYlPlRURys5VVJALP3QUEYvPlRUUysgVVxALDhUUkctP1NQRi8+VFRHKzmQ0lUrIFVcQCw4VFJHLT9TUEYvPlRUQis5kNNWKyBVXEAsOFRSRy0/U1BGLz5UVEfosEFSXi0wU1VGLD5UVEErPFVWQCw4UFJH6LFaUl4tMFNVRiw+VFRBKzxVVkAsOFdSR+iyR1JeLTBTVUYsPlRUQSs8VVZALDhQUkfos1pSXi0wU1VGLD5UVEErPFVWQCw4V1JH6LRHUl4tMFNVRiw+VFRBKzxVVkAsOFBSR+i1WlJeLTBTVUYsPlRUQSs8VVZALDhSUkfotlhSXi0wU1VGLD5UVEErPFVWQCw4V1JH6LdHUl4tMFNVRiw+VFRBKzxVVkAsOEVSR+ioUVJeLTBTVUYsPlRURSs5kMVFKzxVVkAsOEBSXi0wU1VGLD5UVEUrOZDGRSs8VVZALDhAUl4tMFNVRiw+VFRBKzxVVkAsOFBSR+irWlJeLTBTVUYsPlRUQSs8VVZALDhQUkforFpSXi0wU1VGLD5UVEErPFVWQCw4UVJH6K1FUl4tMFNVRiw+VFRFKzmQwkUrPFVWQCw4QFJeLTBTVUYsPlRUQSs8VVZALDhQUkfor1pSXi0wU1VGLD5UVEErPFVWQCw4UFJH6KBaUl4tMFNVRiw+VFRBKzxVVkAsOF5SR+ihXFJeLTBTVUYsPlRUQSs8VVZALDhXUkfookdSXi0wU1VGLD5UVEErPFVWQCw4U1JH6KNbUl4tMFNVRiw+VFRBKzxVVkAsOFBSR+ikWlJeLTBTVUYsPlRUQSs8VVZALDhXUkfopUdSXi0wU1VGLD5UVEErPFVWQCw4WVJH6KZdUl4tMFNVRiw+VFRBKzxVVkAsOEZSR+inVFJeLTBTVUYsPlRUQys5kPRHKzxVVkAsOEBSXi0wU1VGLD5UVEErPFVWQCw4VFJH6JlGUl4tMFNVRiw+VFRBKzxVVkAsOFBSR+iaWlJeLTBTVUYsPlRUQSs8VVZALDhZUkfom11SUS0=
+ 	
+					  	    	
+ 		 	 	   	
+	 $	   %	     ; -> VlRHJDJUVU81OVxdRyw6XFZHLjFUVUctOVRVRi4xVFRHLDlVVUcsOFRVRy07XF5HLzhLVUEkOVRVTyw4XV1ELTlcVkcuOFRVRC05VFVGLDFfVUckOVVwRy8xVlRHLDxVXEcsOHBVRyQ5VVZHLDhTVUctJFRVRi45VFR9LA==
+	  5 96;<01D	/CA324BE
+.?@8 &)$%"!' *

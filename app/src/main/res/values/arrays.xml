@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="file">
+        <!--以下全是自定义了文件类型图标的-->
+        <item>.java</item>
+        <item>.soft</item>
+        <item>.xml</item>
+        <item>.zip</item>
+        <item>.jar</item>
+        <item>.aar</item>
+        <item>.png</item>
+        <item>.jpg</item>
+        <item>.txt</item>
+        <item>.html</item>
+        <item>.mp3</item>
+        <item>.mp4</item>
+        <item>.apk</item>
+        <item>.sof</item>
+        <!--以下全是没有自定义文件类型图标的使用包含于-->
+        <item>.lua</item>
+        <item>.css</item>
+        <item>.js</item>
+        <item>.go</item>
+        <item>.kt</item>
+        <item>.c</item>
+        <item>.sh</item>
+        <item>.php</item>
+        <item>.gradle</item>
+        <item>.json</item>
+        <item>.md</item>
+        <item>.class</item>
+    </array>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/cation"
+        android:title="创建项目"/>
+    
+    <item
+        android:id="@+id/sort"
+        android:title="导入项目"/>
+    
+    <item
+        android:id="@+id/setting"
+        android:title="设置"/>
+    
+    <item
+        android:id="@+id/exit"
+        android:title="退出"/>
+    
+    
+    
+</menu>

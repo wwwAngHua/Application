@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/compilerun"
+        android:icon="@drawable/ic_l_play_dark"
+        android:title="编译"
+        app:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/undo"
+        android:icon="@drawable/ic_undo_white"
+        android:title="撤销"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    
+    <item
+        android:id="@+id/redo"
+        android:icon="@drawable/ic_redo_white"
+        android:title="重做"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/savecode"
+        android:title="保存"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/copycode"
+        android:title="全部复制"
+        app:showAsAction="never" />
+</menu>
+

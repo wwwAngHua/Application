@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="项目名："
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:paddingLeft="25dp"
+		android:layout_marginTop="10dp"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:text="MySoft"
+		android:id="@+id/newprojectname"
+		android:inputType="text"
+        android:maxLength="15"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="包名："
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_marginLeft="25dp"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:text="com.application.soft"
+		android:id="@+id/newprojectpackage"
+		android:inputType="textVisiblePassword"
+        android:maxLength="50"/>
+
+</LinearLayout>
+
