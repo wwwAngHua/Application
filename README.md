@@ -7,11 +7,8 @@ Application中所使用的Soft语言其实本质是也是Java，只是对Java的
 大家觉得有用的话，麻烦点个Start收藏一下，感谢！！！
 
 开发者：王华
-
 联系QQ：422584084
-
 联系邮箱：wwwanghua@outlook.com
-
 Application官方QQ交流群：737444923
 
 **一、编译原理**
