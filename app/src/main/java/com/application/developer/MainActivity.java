@@ -55,27 +55,44 @@ public class MainActivity extends Activity
     private Context mContext;
     private AppAdapter mAdapter = null;
     private ListView list_animal;
-    Dialog dialog,dialog1,dialog2;
+    Dialog dialog, dialog1, dialog2;
     private String gxdz;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         requestPermission();
+        setup_aapt();
+        init_gui();
+        //init_talking_data();
+    }
+
+    //爆红待修复
+    public void requestPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]
+                    {
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                            Manifest.permission.READ_EXTERNAL_STORAGE
+                    }, 100);
+        }
+    }
+
+    public void setup_aapt() {
         //aapt文件路径
         File file = new File("/data/data/com.application.developer/files/aapt");
         File files = new File("/data/data/com.application.developer/files/android.jar");
         //判断aapt文件是否存在，如果不存在就复制aapt到私有目录
-        if (!file.exists() && !files.exists())
-        {
-            try
-            {
+        if (!file.exists() && !files.exists()) {
+            try {
                 InputStream input = getResources().getAssets().open("aapt");
-                FileOutputStream out = this.openFileOutput("aapt",Context.MODE_PRIVATE);
+                FileOutputStream out = this.openFileOutput("aapt", Context.MODE_PRIVATE);
                 byte[] b = new byte[input.available()];
                 InputStream inputs = getResources().getAssets().open("android.jar");
-                FileOutputStream outs = this.openFileOutput("android.jar",Context.MODE_PRIVATE);
+                FileOutputStream outs = this.openFileOutput("android.jar", Context.MODE_PRIVATE);
                 byte[] bs = new byte[inputs.available()];
                 inputs.read(bs);
                 outs.write(bs);
@@ -85,145 +102,163 @@ public class MainActivity extends Activity
                 out.write(b);
                 input.close();
                 out.close();
-            }
-            catch (IOException e)
-            {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
             //设置可执行
             file.setExecutable(true);
             files.setExecutable(true);
-            //Dialog弹窗
-            AlertDialog.Builder build = new AlertDialog.Builder(this);
-            build.setTitle("欢迎");
-            build.setMessage("欢迎来到Application！\n\nApplication是一个集成开发环境（IDE），直接在Android设备上开发真正的Android应用程序，让你在没有电脑的情况下，一步一步成为一个专家应用程序开发人员。\n\nApplication支持Soft&XML和Android SDK开发应用程序，用Java&XML和Android SDK开发应用程序，不仅如此，Application还支持Soft与Java进行混编交互。\n\nApplication设计的目的是构建一个Soft语言的开发环境，让人人都能开发应用程序，Soft语言简化了Java繁琐的代码并保留了Java原有的特点，让小白也能够快速上手开发应用程序。\n\nApplication使用的主要编程语言是Soft语言，如需了解学习Soft语言请阅读Soft快速开发手册。\n\nApplication当前软件版本为1.0版本，功能尚未完善，如果您在使用过程中遇到什么问题或者有什么好的建议欢迎反馈给我们，让我们更好的完善Application，同时欢迎各位有兴趣有志向的小伙伴一起交流一同发展。\n\n开发者：王华\n联系QQ：422584084\n联系邮箱：wwwanghua@outlook.com\nApplication官方QQ交流群：737444923");
-            build.setCancelable(false);
-            build.setPositiveButton("确定", new DialogInterface.OnClickListener()
-            {
-                @Override
-                public void onClick(DialogInterface p1, int p2)
-                {
-                    try
-                    {
-                        //获取project目录下的项目列表
-                        mContext = MainActivity.this;
-                        list_animal = (ListView) findViewById(R.id.applistview);
-                        list_animal.setEmptyView(findViewById(R.id.appnoproject));
-                        mData = new LinkedList<AppList>();
-                        List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
-                        for (String s : lists)
-                        {
-                            if (FileUtils.isProjectPackage(new File(s)))
-                            {
-                                String temp1 = "/AndroidManifest.xml";
-                                String temp2 = "/res/values/strings.xml";
-                                String temp3 = "/res/drawable/ic_launcher.png";
-                                String apppackage = FileUtils.readFileContent(new File(s + temp1));
-                                apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
-                                String appname = FileUtils.readFileContent(new File(s + temp2));
-                                appname = FileUtils. getSubString(appname, "name=\"app_name\">", "</string>");
-                                temp3 = s+temp3;
-                                mData.add(new AppList(appname, apppackage, temp3, s));
-                            }
+        }
+    }
+
+    public void init_gui()
+    {
+        //Dialog弹窗
+        AlertDialog.Builder build = new AlertDialog.Builder(this);
+        build.setTitle("欢迎");
+        build.setMessage("欢迎来到Application！\n\nApplication是一个集成开发环境（IDE），直接在Android设备上开发真正的Android应用程序，让你在没有电脑的情况下，一步一步成为一个专家应用程序开发人员。\n\nApplication支持Soft&XML和Android SDK开发应用程序，用Java&XML和Android SDK开发应用程序，不仅如此，Application还支持Soft与Java进行混编交互。\n\nApplication设计的目的是构建一个Soft语言的开发环境，让人人都能开发应用程序，Soft语言简化了Java繁琐的代码并保留了Java原有的特点，让小白也能够快速上手开发应用程序。\n\nApplication使用的主要编程语言是Soft语言，如需了解学习Soft语言请阅读Soft快速开发手册。\n\nApplication当前软件版本为1.0版本，功能尚未完善，如果您在使用过程中遇到什么问题或者有什么好的建议欢迎反馈给我们，让我们更好的完善Application，同时欢迎各位有兴趣有志向的小伙伴一起交流一同发展。\n\n开发者：王华\n联系QQ：422584084\n联系邮箱：wwwanghua@outlook.com\nApplication官方QQ交流群：737444923");
+        build.setCancelable(false);
+        build.setPositiveButton("确定", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface p1, int p2) {
+                try {
+                    //获取project目录下的项目列表
+                    mContext = MainActivity.this;
+                    list_animal = (ListView) findViewById(R.id.applistview);
+                    list_animal.setEmptyView(findViewById(R.id.appnoproject));
+                    mData = new LinkedList<AppList>();
+                    List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
+                    for (String s : lists) {
+                        if (FileUtils.isProjectPackage(new File(s))) {
+                            String temp1 = "/AndroidManifest.xml";
+                            String temp2 = "/res/values/strings.xml";
+                            String temp3 = "/res/drawable/ic_launcher.png";
+                            String apppackage = FileUtils.readFileContent(new File(s + temp1));
+                            apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
+                            String appname = FileUtils.readFileContent(new File(s + temp2));
+                            appname = FileUtils.getSubString(appname, "name=\"app_name\">", "</string>");
+                            temp3 = s + temp3;
+                            mData.add(new AppList(appname, apppackage, temp3, s));
                         }
-                        mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
-                        list_animal.setAdapter(mAdapter);
                     }
-                    catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                    dialog.dismiss();
+                    mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
+                    list_animal.setAdapter(mAdapter);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            });
-            dialog = build.create();
-            dialog.show();
-            //Toast.makeText(this,"Welcome to Application!",Toast.LENGTH_SHORT).show();
-        }
-        
-        try
-        {
-        //获取project目录下的项目列表
-        mContext = MainActivity.this;
-        list_animal = (ListView) findViewById(R.id.applistview);
-        list_animal.setEmptyView(findViewById(R.id.appnoproject));
-        mData = new LinkedList<AppList>();
-        List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
-        for (String s : lists)
-        {
-            if (FileUtils.isProjectPackage(new File(s)))
-            {
-                String temp1 = "/AndroidManifest.xml";
-                String temp2 = "/res/values/strings.xml";
-                String temp3 = "/res/drawable/ic_launcher.png";
-                String apppackage = FileUtils.readFileContent(new File(s + temp1));
-                apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
-                String appname = FileUtils.readFileContent(new File(s + temp2));
-                appname = FileUtils. getSubString(appname, "name=\"app_name\">", "</string>");
-                temp3 = s+temp3;
-                mData.add(new AppList(appname, apppackage, temp3, s));
+                dialog.dismiss();
             }
-        }
-        mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
-        list_animal.setAdapter(mAdapter);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-        
-        /*加载application列表
+        });
+        dialog = build.create();
+        dialog.show();
+        //Toast.makeText(this,"Welcome to Application!",Toast.LENGTH_SHORT).show();
+        try {
+            //获取project目录下的项目列表
+            mContext = MainActivity.this;
+            list_animal = (ListView) findViewById(R.id.applistview);
+            list_animal.setEmptyView(findViewById(R.id.appnoproject));
+            mData = new LinkedList<AppList>();
+            List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
+            for (String s : lists) {
+                if (FileUtils.isProjectPackage(new File(s))) {
+                    String temp1 = "/AndroidManifest.xml";
+                    String temp2 = "/res/values/strings.xml";
+                    String temp3 = "/res/drawable/ic_launcher.png";
+                    String apppackage = FileUtils.readFileContent(new File(s + temp1));
+                    apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
+                    String appname = FileUtils.readFileContent(new File(s + temp2));
+                    appname = FileUtils.getSubString(appname, "name=\"app_name\">", "</string>");
+                    temp3 = s + temp3;
+                    mData.add(new AppList(appname, apppackage, temp3, s));
+                }
+            }
+            mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
+            list_animal.setAdapter(mAdapter);
+        } catch (Exception e) {e.printStackTrace();}
+
+        //加载application列表
         mContext = MainActivity.this;
-        list_animal = (ListView) findViewById(R.id.applistview);
-        mData = new LinkedList<AppList>();
-        mData.add(new AppList("MyApp", "com.application.my", R.drawable.ic_launcher));
-        mData.add(new AppList("MyApp1", "com.application.my1", R.drawable.ic_launcher));
-        mData.add(new AppList("MyApp2", "com.application.my2", R.drawable.ic_launcher));
-        mData.add(new AppList("MyApp3", "com.application.my3", R.drawable.ic_launcher));
-        mData.add(new AppList("MyApp4", "com.application.my4", R.drawable.ic_launcher));
-        mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
+        list_animal =(ListView) findViewById(R.id.applistview);
+        mData =new LinkedList<AppList>();
+        mData.add(new AppList("MyApp","com.application.my","R.drawable.ic_launcher",null));
+        mData.add(new AppList("MyApp1","com.application.my1","R.drawable.ic_launcher",null));
+        mData.add(new AppList("MyApp2","com.application.my2","R.drawable.ic_launcher",null));
+        mData.add(new AppList("MyApp3","com.application.my3","R.drawable.ic_launcher",null));
+        mData.add(new AppList("MyApp4","com.application.my4","R.drawable.ic_launcher",null));
+        mAdapter =new AppAdapter((LinkedList<AppList>) mData,mContext);
         list_animal.setAdapter(mAdapter);
-        */
-        
         //ListView单击事件
         list_animal.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
-                @Override
-                public void onItemClick(AdapterView<?> p1,View p2,int p3,long p4)
-                {
-                    AppList appname = mData.get(p3);
-                    Intent intent = new Intent(MainActivity.this,FilesActivity.class);
-                    intent.putExtra("AppName",appname.getappName());
-                    intent.putExtra("Path",appname.getappPath());
-                    startActivity(intent);
-                }
-            });
-            
+            @Override
+            public void onItemClick (AdapterView < ? > p1, View p2,int p3, long p4)
+            {
+                AppList appname = mData.get(p3);
+                Intent intent = new Intent(MainActivity.this, FilesActivity.class);
+                intent.putExtra("AppName", appname.getappName());
+                intent.putExtra("Path", appname.getappPath());
+                startActivity(intent);
+            }
+    });
         //ListView长按事件
         list_animal.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
         {
-                @Override
-                public boolean onItemLongClick(AdapterView<?> p1, View p2, int p3, long p4)
+            @Override
+            public boolean onItemLongClick (AdapterView < ? > p1, View p2,int p3, long p4)
+            {
+                AppList datails = mData.get(p3);
+                Intent intent = new Intent(MainActivity.this, DatailsActivity.class);
+                intent.putExtra("Icon", datails.getappIcon());
+                intent.putExtra("Name", datails.getappName());
+                intent.putExtra("Package", datails.getappPackage());
+                intent.putExtra("Path", datails.getappPath());
+                startActivity(intent);
+                return true;
+            }
+    });
+}
+//2022/8/10 小沙盒：修复并移除无法获取的网页信息
+public void init_talking_data() {
+    //初始化TalkingData
+    TCAgent.LOG_ON = true;
+    TCAgent.init(this, "881EAF8519DF4165B2C110FF54E11C20", "Android");
+    TCAgent.setReportUncaughtExceptions(true);
+    //检测版本更新以及获取公告
+    PackageManager ver = getPackageManager();
+    Button compile = (Button) findViewById(R.id.compilerun);
+    compile.setOnClickListener(new OnClickListener() {
+        @Override
+        public void onClick(View p1) {
+            if (aapt())
+            {
+                if (ecj())
                 {
-                    AppList datails = mData.get(p3);
-                    Intent intent = new Intent(MainActivity.this,DatailsActivity.class);
-                    intent.putExtra("Icon",datails.getappIcon());
-                    intent.putExtra("Name",datails.getappName());
-                    intent.putExtra("Package",datails.getappPackage());
-                    intent.putExtra("Path",datails.getappPath());
-                    startActivity(intent);
-                    return true;
-                }
-            });
-            
-        //初始化TalkingData
-        TCAgent.LOG_ON=true;
-        TCAgent.init(this,"881EAF8519DF4165B2C110FF54E11C20","Android");
-        TCAgent.setReportUncaughtExceptions(true);
-        
-        //检测版本更新以及获取公告
-        PackageManager ver = getPackageManager();
-        try
+                    if (dex())
+                    {
+                        if (sdklib())
+                        {
+                            if (zipSigner())
+                            {
+                                Toast.makeText(MainActivity.this, "编译成功", Toast.LENGTH_SHORT).show();
+                            } else
+                                Toast.makeText(MainActivity.this, "签名失败", Toast.LENGTH_SHORT).show();
+                            Log.e(TAG, "zipSigner失败");
+                        } else
+                            Toast.makeText(MainActivity.this, "打包apk失败", Toast.LENGTH_SHORT).show();
+                        Log.e(TAG, "sdklib失败");
+                    } else
+                        Toast.makeText(MainActivity.this, "dex编译失败", Toast.LENGTH_SHORT).show();
+                    Log.e(TAG, "dex失败");
+                } else
+                    Toast.makeText(MainActivity.this, "Java编译失败", Toast.LENGTH_SHORT).show();
+                Log.e(TAG, "ecj失败");
+            } else
+                Toast.makeText(MainActivity.this, "资源编译失败", Toast.LENGTH_SHORT).show();
+            Log.e(TAG, "aapt失败");
+        }
+    });
+        /*try
         {
             PackageInfo sion = ver.getPackageInfo(getPackageName(),0);
             String version = sion.versionName;
@@ -311,83 +346,38 @@ public class MainActivity extends Activity
         catch (PackageManager.NameNotFoundException e)
         {
             e.printStackTrace();
-        }
-        /*
-        Button compile = (Button) findViewById(R.id.compile);
-        compile.setOnClickListener(new OnClickListener()
-        {
-                @Override
-                public void onClick(View p1)
-                {
-                    if (aapt())
-                    {
-                        if (ecj())
-                        {
-                            if (dex())
-                            {
-                                if (sdklib())
-                                {
-                                    if (zipSigner())
-                                    {
-                                        Toast.makeText(MainActivity.this,"编译成功",Toast.LENGTH_SHORT).show();
-                                    }
-                                    else
-                                        Toast.makeText(MainActivity.this,"签名失败",Toast.LENGTH_SHORT).show();
-                                        Log.e(TAG,"zipSigner失败");
-                                }
-                                else
-                                    Toast.makeText(MainActivity.this,"打包apk失败",Toast.LENGTH_SHORT).show();
-                                    Log.e(TAG,"sdklib失败");
-                            }
-                            else
-                                Toast.makeText(MainActivity.this,"dex编译失败",Toast.LENGTH_SHORT).show();
-                                Log.e(TAG,"dex失败");
-                        }
-                        else
-                            Toast.makeText(MainActivity.this,"Java编译失败",Toast.LENGTH_SHORT).show();
-                            Log.e(TAG,"ecj失败");
-                    }
-                    else
-                        Toast.makeText(MainActivity.this,"资源编译失败",Toast.LENGTH_SHORT).show();
-                        Log.e(TAG,"aapt失败");
-                }
-            });
-        */
-    }
-    
+        }*/
+}
     //使用aapt编译资源
     public boolean aapt()
     {
-        String[] args = 
-        {
-            //aapt文件路径
-            "data/data/com.application.developer/files/aapt",
-            //执行aapt编译资源
-            "package","-v","-f","-m",
-            //res文件夹路径
-            "-S","/storage/emulated/0/AppProjects/Test/app/src/main/res/",
-            //gen文件夹路径
-            "-J","/storage/emulated/0/AppProjects/Test/app/build/gen/",
-            //assets文件夹路径，如果没有会导致编译失败
-            "-A","/storage/emulated/0/AppProjects/Test/app/src/main/assets/",
-            //AndroidManifest.xml文件路径
-            "-M","/storage/emulated/0/AppProjects/Test/app/src/main/AndroidManifest.xml",
-            //android.jar文件路径
-            "-I","/storage/emulated/0/.aide/android.jar",
-            //输出.ap_文件路径
-            "-F","/storage/emulated/0/AppProjects/Test/app/build/bin/resources.ap_"
-        };
+        String[] args = {
+                //aapt文件路径
+                        "data/data/com.application.developer/files/aapt",
+                        //执行aapt编译资源
+                        "package","-v","-f","-m",
+                        //res文件夹路径
+                        "-S","/storage/emulated/0/AppProjects/Test/app/src/main/res/",
+                        //gen文件夹路径
+                        "-J","/storage/emulated/0/AppProjects/Test/app/build/gen/",
+                        //assets文件夹路径，如果没有会导致编译失败
+                        "-A","/storage/emulated/0/AppProjects/Test/app/src/main/assets/",
+                        //AndroidManifest.xml文件路径
+                        "-M","/storage/emulated/0/AppProjects/Test/app/src/main/AndroidManifest.xml",
+                        //android.jar文件路径
+                        "-I","/storage/emulated/0/.aide/android.jar",
+                        //输出.ap_文件路径
+                        "-F","/storage/emulated/0/AppProjects/Test/app/build/bin/resources.ap_"
+                };
         try
         {
             Process process = Runtime.getRuntime().exec(args);
             int code = process.waitFor();
-            /*
             //如果失败请打印此信息
-            InputStream input=process.getInputStream(); 
+            InputStream input=process.getInputStream();
             //获得执行信息
-            InputStream input=process.getErrorStream(); 
+            InputStream error=process.getErrorStream();
             //获得错误信息
-            */
             if (code!=0)
                 return false;
         }
@@ -403,7 +393,7 @@ public class MainActivity extends Activity
         }
         return true;
     }
-    
+
     //使用ecj编译java
     public boolean ecj()
     {
@@ -411,30 +401,30 @@ public class MainActivity extends Activity
         ByteArrayOutputStream baos1 = new ByteArrayOutputStream();
         //错误信息
         ByteArrayOutputStream baos2 = new ByteArrayOutputStream();
-        Main main = new Main(new PrintWriter(baos1),new PrintWriter(baos2),false,null,null);
+        Main main = new Main(new PrintWriter(baos1), new PrintWriter(baos2), false, null, null);
         //像下面这样可以直接打印信息
         //Main main=new Main(new PrintWriter(System.out),new PrintWriter(System.err),false,null,null);
         String[] args =
-        {
-            "-verbose",
-            //第三方jar文件存放路径
-            "-extdirs","/storage/emulated/0/AppProjects/Test/app/libs/",
-            //android.jar文件路径
-            "-bootclasspath","/storage/emulated/0/.aide/android.jar",
-            //java文件存放路径
-            "-classpath","/storage/emulated/0/AppProjects/Test/app/src/main/java/"+":"+
-            //r.java文件存放路径
-            "/storage/emulated/0/AppProjects/Test/app/build/gen/"+":"+
-            //第三方jar文件存放路径，如果没有使用第三方jar那就不用添加，它们之间用冒号隔开
-            "/storage/emulated/0/AppProjects/Test/app/libs/",
-            "-1.6",
-            "-target","1.6",
-            "-proc:none",
-            //class文件存放路径
-            "-d","/storage/emulated/0/AppProjects/Test/app/build/bin/classes/",
-            //第一个被执行的java文件
-            "/storage/emulated/0/AppProjects/Test/app/src/main/java/com/huayi/test/MainActivity.java"
-        };
+                {
+                        "-verbose",
+                        //第三方jar文件存放路径
+                        "-extdirs", "/storage/emulated/0/AppProjects/Test/app/libs/",
+                        //android.jar文件路径
+                        "-bootclasspath", "/storage/emulated/0/.aide/android.jar",
+                        //java文件存放路径
+                        "-classpath", "/storage/emulated/0/AppProjects/Test/app/src/main/java/" + ":" +
+                        //r.java文件存放路径
+                        "/storage/emulated/0/AppProjects/Test/app/build/gen/" + ":" +
+                        //第三方jar文件存放路径，如果没有使用第三方jar那就不用添加，它们之间用冒号隔开
+                        "/storage/emulated/0/AppProjects/Test/app/libs/",
+                        "-1.6",
+                        "-target", "1.6",
+                        "-proc:none",
+                        //class文件存放路径
+                        "-d", "/storage/emulated/0/AppProjects/Test/app/build/bin/classes/",
+                        //第一个被执行的java文件
+                        "/storage/emulated/0/AppProjects/Test/app/src/main/java/com/huayi/test/MainActivity.java"
+                };
         //执行编译并返回结果
         boolean b = main.compile(args);
         //如果失败请打印此信息
@@ -551,22 +541,10 @@ public class MainActivity extends Activity
         return true;
     }
     
-    public void requestPermission()
-    {
-        if (ContextCompat.checkSelfPermission(this,Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
-            ||
-            ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
-            {
-            ActivityCompat.requestPermissions(this,new String[]
-            {
-                Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.READ_EXTERNAL_STORAGE
-            },100);
-        }
-    }
+
     
     //创建Menu菜单 menu_main.xml
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater inflater = getMenuInflater();
@@ -752,5 +730,4 @@ public class MainActivity extends Activity
         return super.onKeyDown(keyCode, event);
     }
     */
-    
 }
