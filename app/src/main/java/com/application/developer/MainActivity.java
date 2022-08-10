@@ -59,17 +59,206 @@ public class MainActivity extends Activity
     private String gxdz;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         requestPermission();
         setup_aapt();
         init_gui();
-        //init_talking_data();
+        init_talking_data();
     }
 
+    //创建Menu菜单 menu_main.xml
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main,menu);
+        return true;
+    }
+    //设置Menu菜单单击事件
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.cation:
+                //dialog弹窗
+                AlertDialog.Builder build = new AlertDialog.Builder(this);
+                build.setTitle("创建项目");
+                LayoutInflater lay = this.getLayoutInflater();
+                View v = lay.inflate(R.layout.new_project,null);
+                build.setView(v);
+                final TextView name = (TextView) v.findViewById(R.id.newprojectname);
+                final TextView pack = (TextView) v.findViewById(R.id.newprojectpackage);
+                build.setPositiveButton("确定", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface p1, int p2)
+                    {
+                        if(name.getText().toString().equals(""))
+                        {
+                            Toast.makeText(MainActivity.this,"项目名不能为空",Toast.LENGTH_SHORT).show();
+                        }
+                        else if(pack.getText().toString().equals(""))
+                        {
+                            Toast.makeText(MainActivity.this,"包名不能为空",Toast.LENGTH_SHORT).show();
+                        }
+                        else
+                        {
+                            try
+                            {
+                                //从assets目录下解压zip文件
+                                String path = "/storage/emulated/0/Application/Project/"+name.getText().toString();
+                                ZipUtils.UnZipAssetsFolder(MainActivity.this,"MySoft.sof",path);
+                            }
+                            catch (Exception e)
+                            {
+                                e.printStackTrace();
+                            }
+                            try
+                            {
+                                //修改项目AndroidManifest.xml包名和strings.xml软件名
+                                String manifest = FileUtils.getString("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/","AndroidManifest.xml");
+                                String strings = FileUtils.getString("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/res/values/","strings.xml");
+                                String main = FileUtils.getString("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/src/","Main.soft");
+                                String manifest1 = manifest.replace("$APP_PACKAGE$",pack.getText().toString());
+                                String strings1 = strings.replace("$APP_NAME$",name.getText().toString());
+                                String main1 = main.replace("$APP_PACKAGE$",pack.getText().toString());
+                                FileUtils.modifyFile("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/AndroidManifest.xml",manifest1,false);
+                                FileUtils.modifyFile("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/res/values/strings.xml",strings1,false);
+                                FileUtils.modifyFile("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/src/Main.soft",main1,false);
+                            }
+                            catch (Exception e)
+                            {
+                                e.printStackTrace();
+                            }
+                            try
+                            {
+                                //获取project目录下的项目列表
+                                mContext = MainActivity.this;
+                                list_animal = (ListView) findViewById(R.id.applistview);
+                                list_animal.setEmptyView(findViewById(R.id.appnoproject));
+                                mData = new LinkedList<AppList>();
+                                List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
+                                for (String s : lists)
+                                {
+                                    if (FileUtils.isProjectPackage(new File(s)))
+                                    {
+                                        String temp1 = "/AndroidManifest.xml";
+                                        String temp2 = "/res/values/strings.xml";
+                                        String temp3 = "/res/drawable/ic_launcher.png";
+                                        String apppackage = FileUtils.readFileContent(new File(s + temp1));
+                                        apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
+                                        String appname = FileUtils.readFileContent(new File(s + temp2));
+                                        appname = FileUtils. getSubString(appname, "name=\"app_name\">", "</string>");
+                                        temp3 = s+temp3;
+                                        mData.add(new AppList(appname, apppackage, temp3, s));
+                                    }
+                                }
+                                mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
+                                list_animal.setAdapter(mAdapter);
+                                Toast.makeText(MainActivity.this,"创建成功",Toast.LENGTH_SHORT).show();
+                            }
+                            catch (Exception e)
+                            {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                });
+                build.setNegativeButton("取消", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface p1, int p2)
+                    {
+                        dialog.dismiss();
+                    }
+                });
+                dialog = build.create();
+                dialog.show();
+                return true;
+            case R.id.sort:
+                Intent sort = new Intent();
+                sort.setClass(this,AlreadyActivity.class);
+                startActivity(sort);
+                return true;
+            case R.id.setting:
+                Intent setting = new Intent();
+                setting.setClass(this,SettingActivity.class);
+                startActivity(setting);
+                return true;
+            case R.id.exit:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    //onRestart()重新开始事件
+    @Override
+    protected void onRestart()
+    {
+        super.onRestart();
+        try
+        {
+            //获取project目录下的项目列表
+            mContext = MainActivity.this;
+            list_animal = (ListView) findViewById(R.id.applistview);
+            list_animal.setEmptyView(findViewById(R.id.appnoproject));
+            mData = new LinkedList<AppList>();
+            List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
+            for (String s : lists)
+            {
+                if (FileUtils.isProjectPackage(new File(s)))
+                {
+                    String temp1 = "/AndroidManifest.xml";
+                    String temp2 = "/res/values/strings.xml";
+                    String temp3 = "/res/drawable/ic_launcher.png";
+                    String apppackage = FileUtils.readFileContent(new File(s + temp1));
+                    apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
+                    String appname = FileUtils.readFileContent(new File(s + temp2));
+                    appname = FileUtils. getSubString(appname, "name=\"app_name\">", "</string>");
+                    temp3 = s+temp3;
+                    mData.add(new AppList(appname, apppackage, temp3, s));
+                }
+            }
+            mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
+            list_animal.setAdapter(mAdapter);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    //退出软件前询问
+    @Override
+    public void onBackPressed()
+    {
+        AlertDialog.Builder Builder = new AlertDialog.Builder(this);
+        Builder.setTitle("确定要退出吗？");
+        Builder.setNeutralButton("确定", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                finish();
+            }
+        });
+        Builder.setNegativeButton("取消", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+
+            }
+        });
+        Builder.show();
+    }
     //爆红待修复
-    public void requestPermission() {
+    public void requestPermission()
+    {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
                 ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -221,12 +410,13 @@ public class MainActivity extends Activity
 //2022/8/10 小沙盒：修复并移除无法获取的网页信息
 public void init_talking_data() {
     //初始化TalkingData
-    TCAgent.LOG_ON = true;
+    /*TCAgent.LOG_ON = true;
     TCAgent.init(this, "881EAF8519DF4165B2C110FF54E11C20", "Android");
-    TCAgent.setReportUncaughtExceptions(true);
+    TCAgent.setReportUncaughtExceptions(true);*/
     //检测版本更新以及获取公告
-    PackageManager ver = getPackageManager();
-    Button compile = (Button) findViewById(R.id.compilerun);
+    //PackageManager ver = getPackageManager();
+    //下面的代码存在问题
+    /*Button compile = (Button) findViewById(R.id.compilerun);
     compile.setOnClickListener(new OnClickListener() {
         @Override
         public void onClick(View p1) {
@@ -257,7 +447,8 @@ public void init_talking_data() {
                 Toast.makeText(MainActivity.this, "资源编译失败", Toast.LENGTH_SHORT).show();
             Log.e(TAG, "aapt失败");
         }
-    });
+    });*/
+    //旧版自动检测更新 有bug，无法获取网站信息
         /*try
         {
             PackageInfo sion = ver.getPackageInfo(getPackageName(),0);
@@ -540,194 +731,4 @@ public void init_talking_data() {
         }
         return true;
     }
-    
-
-    
-    //创建Menu菜单 menu_main.xml
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main,menu);
-        return true;
-    }
-    
-    //设置Menu菜单单击事件
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.cation:
-                //dialog弹窗
-                AlertDialog.Builder build = new AlertDialog.Builder(this);
-                build.setTitle("创建项目");
-                LayoutInflater lay = this.getLayoutInflater();
-                View v = lay.inflate(R.layout.new_project,null);
-                build.setView(v);
-                final TextView name = (TextView) v.findViewById(R.id.newprojectname);
-                final TextView pack = (TextView) v.findViewById(R.id.newprojectpackage);
-                build.setPositiveButton("确定", new DialogInterface.OnClickListener()
-                    {
-                        @Override
-                        public void onClick(DialogInterface p1, int p2)
-                        {
-                            if(name.getText().toString().equals(""))
-                            {
-                                Toast.makeText(MainActivity.this,"项目名不能为空",Toast.LENGTH_SHORT).show();
-                            }
-                            else if(pack.getText().toString().equals(""))
-                            {
-                                Toast.makeText(MainActivity.this,"包名不能为空",Toast.LENGTH_SHORT).show();
-                            }
-                            else
-                            {
-                            try
-                            {
-                            //从assets目录下解压zip文件
-                            String path = "/storage/emulated/0/Application/Project/"+name.getText().toString();
-                            ZipUtils.UnZipAssetsFolder(MainActivity.this,"MySoft.sof",path);
-                            }
-                            catch (Exception e)
-                            {
-                                e.printStackTrace();
-                            }
-                            try
-                            {
-                            //修改项目AndroidManifest.xml包名和strings.xml软件名
-                            String manifest = FileUtils.getString("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/","AndroidManifest.xml");
-                            String strings = FileUtils.getString("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/res/values/","strings.xml");
-                            String main = FileUtils.getString("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/src/","Main.soft");
-                            String manifest1 = manifest.replace("$APP_PACKAGE$",pack.getText().toString());
-                            String strings1 = strings.replace("$APP_NAME$",name.getText().toString());
-                            String main1 = main.replace("$APP_PACKAGE$",pack.getText().toString());
-                            FileUtils.modifyFile("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/AndroidManifest.xml",manifest1,false);
-                            FileUtils.modifyFile("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/res/values/strings.xml",strings1,false);
-                            FileUtils.modifyFile("/storage/emulated/0/Application/Project/"+name.getText().toString()+"/src/Main.soft",main1,false);
-                            }
-                            catch (Exception e)
-                            {
-                                e.printStackTrace();
-                            }
-                                try
-                                {
-                                //获取project目录下的项目列表
-                                mContext = MainActivity.this;
-                                list_animal = (ListView) findViewById(R.id.applistview);
-                                list_animal.setEmptyView(findViewById(R.id.appnoproject));
-                                mData = new LinkedList<AppList>();
-                                List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
-                                for (String s : lists)
-                                {
-                                    if (FileUtils.isProjectPackage(new File(s)))
-                                    {
-                                        String temp1 = "/AndroidManifest.xml";
-                                        String temp2 = "/res/values/strings.xml";
-                                        String temp3 = "/res/drawable/ic_launcher.png";
-                                        String apppackage = FileUtils.readFileContent(new File(s + temp1));
-                                        apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
-                                        String appname = FileUtils.readFileContent(new File(s + temp2));
-                                        appname = FileUtils. getSubString(appname, "name=\"app_name\">", "</string>");
-                                        temp3 = s+temp3;
-                                        mData.add(new AppList(appname, apppackage, temp3, s));
-                                    }
-                               }
-                               mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
-                               list_animal.setAdapter(mAdapter);
-                               Toast.makeText(MainActivity.this,"创建成功",Toast.LENGTH_SHORT).show();
-                               }
-                               catch (Exception e)
-                               {
-                                   e.printStackTrace();
-                               }
-                            }
-                        }
-                    });
-                build.setNegativeButton("取消", new DialogInterface.OnClickListener()
-                    {
-                        @Override
-                        public void onClick(DialogInterface p1, int p2)
-                        {
-                            dialog.dismiss();
-                        }
-                    });
-                dialog = build.create();
-                dialog.show();
-                return true;
-            case R.id.sort:
-                Intent sort = new Intent();
-                sort.setClass(this,AlreadyActivity.class);
-                startActivity(sort);
-                return true;
-            case R.id.setting:
-                Intent setting = new Intent();
-                setting.setClass(this,SettingActivity.class);
-                startActivity(setting);
-                return true;
-            case R.id.exit:
-                finish();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-	}
-    
-    //onRestart()重新开始事件
-    @Override
-    protected void onRestart()
-    {
-        super.onRestart();
-        try
-        {
-        //获取project目录下的项目列表
-        mContext = MainActivity.this;
-        list_animal = (ListView) findViewById(R.id.applistview);
-        list_animal.setEmptyView(findViewById(R.id.appnoproject));
-        mData = new LinkedList<AppList>();
-        List<String> lists = FileUtils.readFolders(new File("/storage/emulated/0/Application/Project"));
-        for (String s : lists)
-        {
-            if (FileUtils.isProjectPackage(new File(s)))
-            {
-                String temp1 = "/AndroidManifest.xml";
-                String temp2 = "/res/values/strings.xml";
-                String temp3 = "/res/drawable/ic_launcher.png";
-                String apppackage = FileUtils.readFileContent(new File(s + temp1));
-                apppackage = FileUtils.getSubString(apppackage, "package=\"", "\"");
-                String appname = FileUtils.readFileContent(new File(s + temp2));
-                appname = FileUtils. getSubString(appname, "name=\"app_name\">", "</string>");
-                temp3 = s+temp3;
-                mData.add(new AppList(appname, apppackage, temp3, s));
-            }
-        }
-        mAdapter = new AppAdapter((LinkedList<AppList>) mData, mContext);
-        list_animal.setAdapter(mAdapter);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-    
-    /*
-    //双击退出软件
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN)
-            {
-            if (System.currentTimeMillis() - firstTime > 2000)
-            {
-                Toast.makeText(MainActivity.this, "再按一次退出软件",Toast.LENGTH_SHORT).show();
-                firstTime = System.currentTimeMillis();
-            }
-            else
-            {
-                finish();
-                System.exit(0);
-            }
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-    */
 }
