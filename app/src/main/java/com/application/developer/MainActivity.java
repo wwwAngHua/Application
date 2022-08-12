@@ -77,6 +77,7 @@ public class MainActivity extends Activity
         inflater.inflate(R.menu.menu_main,menu);
         return true;
     }
+
     //设置Menu菜单单击事件
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
