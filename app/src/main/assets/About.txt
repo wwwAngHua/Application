@@ -15,3 +15,9 @@ Application当前软件版本为1.0版本，功能尚未完善，如果您在使
 联系QQ：422584084
 联系邮箱：wwwanghua@outlook.com
 Application官方QQ交流群：737444923
+
+此版本为小沙盒工作室分支出来的fork版本
+可能计划以后添加更多的特性支持
+联系qq：2439905184
+此版本开源地址1：https://github.com/2439905184/Application
+此版本开源地址2：https://gitee.com/h128/Application.git

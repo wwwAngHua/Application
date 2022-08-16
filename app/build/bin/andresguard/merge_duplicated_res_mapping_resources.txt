@@ -1,2 +1,0 @@
-res filter path mapping:
-removed: count(0), totalSize(0B)
