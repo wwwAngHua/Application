@@ -38,81 +38,95 @@ public class SettingActivity extends Activity
         {}
         appupdate.setOnClickListener(new OnClickListener()
         {
-                @Override
+            @Override
+            public void onClick(View view)
+            {
+                PackageManager ver = getPackageManager();
+                try
+                {
+                    PackageInfo sion = ver.getPackageInfo(getPackageName(), 0);
+                    String version = sion.versionName;
+                    String versions = GetHttps.getHtml("http://app.huayi-w.cn/application/config.txt");
+                    if(version != null && versions!= null)
+                    {
+                        Toast.makeText(SettingActivity.this,"此功能存在问题",Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(SettingActivity.this,"尽管获取到了数据，未避免出错，已取消在线更新",Toast.LENGTH_LONG).show();
+                    }
+                }
+                catch (PackageManager.NameNotFoundException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+            /* @Override
                 public void onClick(View p1)
                 {
                     PackageManager ver = getPackageManager();
-                    try
-                    {
-                        PackageInfo sion = ver.getPackageInfo(getPackageName(),0);
+                    try {
+                        PackageInfo sion = ver.getPackageInfo(getPackageName(), 0);
                         String version = sion.versionName;
                         String versions = GetHttps.getHtml("http://app.huayi-w.cn/application/config.txt");
-                        String bbh = FileUtils.getSubString(versions, "<version>", "</version>");
-                        String qzgx = FileUtils.getSubString(versions, "<forceupdate>", "</forceupdate>");
-                        String gxnr = FileUtils.getSubString(versions, "<updatetext>", "</updatetext>");
-                        gxdz = FileUtils.getSubString(versions, "<updateurl>", "</updateurl>");
-                        String gxnr1 = gxnr.replace("€","\n");
-                        if (Double.parseDouble(version) < Double.parseDouble(bbh))
-                        {
-                            if (qzgx.equals("true"))
-                            {
-                                AlertDialog.Builder build1 = new AlertDialog.Builder(SettingActivity.this);
-                                build1.setTitle("发现新版本");
-                                build1.setMessage(gxnr1);
-                                build1.setCancelable(false);
-                                build1.setPositiveButton("前往更新", new DialogInterface.OnClickListener()
-                                    {
+                        if (versions != null) {
+                            String bbh = FileUtils.getSubString(versions, "<version>", "</version>");
+                            String qzgx = FileUtils.getSubString(versions, "<forceupdate>", "</forceupdate>");
+                            String gxnr = FileUtils.getSubString(versions, "<updatetext>", "</updatetext>");
+                            gxdz = FileUtils.getSubString(versions, "<updateurl>", "</updateurl>");
+                            String gxnr1 = gxnr.replace("€", "\n");
+                            if (Double.parseDouble(version) < Double.parseDouble(bbh)) {
+                                if (qzgx.equals("true")) {
+                                    AlertDialog.Builder build1 = new AlertDialog.Builder(SettingActivity.this);
+                                    build1.setTitle("发现新版本");
+                                    build1.setMessage(gxnr1);
+                                    build1.setCancelable(false);
+                                    build1.setPositiveButton("前往更新", new DialogInterface.OnClickListener() {
                                         @Override
-                                        public void onClick(DialogInterface p1, int p2)
-                                        {
-                                            Intent intent_d= new Intent(); 
-                                            intent_d.setAction("android.intent.action.VIEW"); 
-                                            Uri content_url = Uri.parse(gxdz); 
-                                            intent_d.setData(content_url); startActivity(intent_d);
+                                        public void onClick(DialogInterface p1, int p2) {
+                                            Intent intent_d = new Intent();
+                                            intent_d.setAction("android.intent.action.VIEW");
+                                            Uri content_url = Uri.parse(gxdz);
+                                            intent_d.setData(content_url);
+                                            startActivity(intent_d);
                                         }
                                     });
-                                dialog1 = build1.create();
-                                dialog1.show();
-                            }
-                            else
-                            {
-                            AlertDialog.Builder build = new AlertDialog.Builder(SettingActivity.this);
-                            build.setTitle("发现新版本");
-                            build.setMessage(gxnr1);
-                            build.setPositiveButton("前往更新", new DialogInterface.OnClickListener()
-                            {
-                                @Override
-                                public void onClick(DialogInterface p1, int p2)
-                                {
-                                    Intent intent_d= new Intent(); 
-                                    intent_d.setAction("android.intent.action.VIEW"); 
-                                    Uri content_url = Uri.parse(gxdz); 
-                                    intent_d.setData(content_url); startActivity(intent_d);
+                                    dialog1 = build1.create();
+                                    dialog1.show();
+                                } else {
+                                    AlertDialog.Builder build = new AlertDialog.Builder(SettingActivity.this);
+                                    build.setTitle("发现新版本");
+                                    build.setMessage(gxnr1);
+                                    build.setPositiveButton("前往更新", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface p1, int p2) {
+                                            Intent intent_d = new Intent();
+                                            intent_d.setAction("android.intent.action.VIEW");
+                                            Uri content_url = Uri.parse(gxdz);
+                                            intent_d.setData(content_url);
+                                            startActivity(intent_d);
+                                        }
+                                    });
+                                    build.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface p1, int p2) {
+                                            dialog.dismiss();
+                                        }
+                                    });
+                                    dialog = build.create();
+                                    dialog.show();
                                 }
-                            });
-                            build.setNegativeButton("取消", new DialogInterface.OnClickListener()
-                            {
-                                @Override
-                                public void onClick(DialogInterface p1, int p2)
-                                {
-                                    dialog.dismiss();
-                                }
-                            });
-                            dialog = build.create();
-                            dialog.show();
+                            } else {
+                                Toast.makeText(SettingActivity.this, "已是最新版", Toast.LENGTH_SHORT).show();
                             }
                         }
-                        else
+                        catch(PackageManager.NameNotFoundException e)
                         {
-                            Toast.makeText(SettingActivity.this,"已是最新版",Toast.LENGTH_SHORT).show();
+                            e.printStackTrace();
                         }
-                    }
-                    catch (PackageManager.NameNotFoundException e)
-                    {
-                        e.printStackTrace();
-                    }
-                }
-            });
+
+                    });*/
+        });
         bugfeed.setOnClickListener(new OnClickListener()
         {
                 @Override
